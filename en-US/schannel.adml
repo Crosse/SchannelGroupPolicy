@@ -23,30 +23,36 @@
             <!-- Multi-Protocol Unified Hello -->
             <string id="MPUH">Multi-Protocol Unified Hello</string>
             <string id="MPUH_Help">Enables or disables the use of Multi-Protocol Unified Hello.  This protocol will never be used by Schannel SSP.</string>
+
             <!-- PCT 1.0 -->
             <string id="PCTv1">PCT 1.0</string>
             <string id="PCTv1_Help">Enables or disables the use of PCT 1.0.  This protocol will never be used by Schannel SSP.</string>
+
             <!-- SSLv2 -->
             <string id="SSLv2">SSL 2.0</string>
             <string id="SSLv2_Help">Enables or disables the use of SSL 2.0.  By default for Windows clients, SSL 2.0 is disabled.
 
 Note that SSL 2.0 is insecure and must not be used.
             </string>
+
             <!-- SSLv3 -->
             <string id="SSLv3">SSL 3.0</string>
             <string id="SSLv3_Help">Enables or disables the use of SSL 3.0.
 
 SSL 3.0 is insecure when used with HTTP and weak when used with other protocols.  It is also obsolete.  TLS 1.1 or better should be used instead, if possible.
             </string>
+
             <!-- TLSv1.0 -->
             <string id="TLSv10">TLS 1.0</string>
             <string id="TLSv10_Help">Enables or disables the use of TLS 1.0.
 
 TLS 1.0 is largely still secure.  When used with HTTP, it can almost be made secure with careful configuration.  However, it may be required for backwards compatibility reasons.
             </string>
+
             <!-- TLSv1.1 -->
             <string id="TLSv11">TLS 1.1</string>
             <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.  TLS 1.1 and 1.2 are without known security issues.</string>
+
             <!-- TLSv1.2 -->
             <string id="TLSv12">TLS 1.2</string>
             <string id="TLSv12_Help">Enables or disables the use of TLS 1.2.  TLS 1.1 and 1.2 are without known security issues.</string>
@@ -144,7 +150,7 @@ SSL_CK_DES_192_EDE_CBC_WITH_MD5
 TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
 TLS_RSA_WITH_3DES_EDE_CBC_SHA
             </string>
-            
+
             <!-- AES 128/128 -->
             <string id="AES128">AES 128/128</string>
             <string id="AES128_Help">Enables or disables the use of AES 128/128.
@@ -171,7 +177,7 @@ TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
 TLS_RSA_WITH_AES_128_CBC_SHA
 TLS_RSA_WITH_AES_128_CBC_SHA256
             </string>
-            
+
             <!-- AES 256/256 -->
             <string id="AES256">AES 256/256</string>
             <string id="AES256_Help">Enables or disables the use of AES 256/256.
@@ -268,7 +274,7 @@ TLS_RSA_WITH_AES_128_CBC_SHA256
 TLS_RSA_WITH_AES_256_CBC_SHA256
 TLS_RSA_WITH_NULL_SHA256
             </string>
-            
+
             <!-- SHA-384 -->
             <string id="SHA384">SHA-384</string>
             <string id="SHA384_Help">Enables or disables the use of the SHA-384 hashing algorithm.
@@ -308,7 +314,7 @@ TLS_DHE_DSS_WITH_DES_CBC_SHA
             <!-- PKCS -->
             <string id="PKCS">PKCS</string>
             <string id="PKCS_Help">Enables or disables the use of the PKCS key exchange algorithm.</string>
-            
+
             <!-- ECDH -->
             <string id="ECDH">ECDH</string>
             <string id="ECDH_Help">Enables or disables the use of the Elliptic-Curve Diffie-Hellman key exchange algorithm.
