@@ -40,7 +40,7 @@
                 presentation="$(presentation.MPUH)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello">
             <parentCategory ref="WeakProtocols" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="MPUH_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" valueName="">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client">
@@ -90,7 +90,7 @@
                 presentation="$(presentation.PCTv1)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0">
             <parentCategory ref="WeakProtocols" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="PCTv1_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" valueName="">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client">
@@ -137,7 +137,7 @@
                 presentation="$(presentation.SSLv2)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0">
             <parentCategory ref="WeakProtocols" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="SSLv2_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" valueName="">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client">
@@ -184,7 +184,7 @@
                 presentation="$(presentation.SSLv3)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0">
             <parentCategory ref="WeakProtocols" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="SSLv3_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" valueName="">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client">
@@ -231,7 +231,7 @@
                 presentation="$(presentation.TLSv10)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0">
             <parentCategory ref="Protocols" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="TLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" valueName="">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client">
@@ -326,7 +326,7 @@
                 presentation="$(presentation.TLSv12)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2">
             <parentCategory ref="Protocols" />
-            <supportedOn ref="windows:SUPPORTED_Windows8" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
                 <boolean id="TLSv12_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" valueName="">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client">
