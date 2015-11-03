@@ -376,7 +376,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\NULL">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -391,7 +391,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -406,7 +406,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -421,7 +421,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -436,7 +436,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -451,7 +451,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -466,7 +466,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -481,7 +481,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -496,7 +496,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128">
             <parentCategory ref="WeakCiphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -511,7 +511,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168/168">
             <parentCategory ref="Ciphers" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -589,7 +589,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256">
             <parentCategory ref="Hashes" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -604,7 +604,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384">
             <parentCategory ref="Hashes" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -619,7 +619,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512">
             <parentCategory ref="Hashes" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -637,7 +637,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\DH">
             <parentCategory ref="KeyEx" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -652,7 +652,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS">
             <parentCategory ref="KeyEx" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
@@ -667,7 +667,7 @@
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH">
             <parentCategory ref="KeyEx" />
-            <supportedOn ref="windows:SUPPORTED_WindowsNET" />
+            <supportedOn ref="windows:SUPPORTED_WindowsVista" />
             <enabledValue>
                 <decimal value="4294967295" />
             </enabledValue>
