@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (c) 2015 Seth Wright (wrightst@jmu.edu) for James Madison University -->
+<!--
+     NOTE:  Some help text comes from Qualys SSL Labs' excellent "SSL/TLS
+     Deployment Best Practices" guide found at
+     https://www.ssllabs.com/projects/best-practices/.
+-->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0" >
+    <displayName>Schannel Settings</displayName>
+    <description>This file contains settings for enabling or disabling TLS and SSL versions.</description>
+    <resources>
+        <stringTable>
+            <!-- CATEGORIES -->
+            <string id="Protocols">Protocols</string>
+            <string id="WeakProtocols">Weak Protocols</string>
+            <string id="Ciphers">Ciphers</string>
+            <string id="WeakCiphers">Weak Ciphers</string>
+            <string id="Hashes">Hashes</string>
+            <string id="KeyEx">Key Exchanges</string>
+
+
+            <!-- PROTOCOLS -->
+            <!-- Multi-Protocol Unified Hello -->
+            <string id="MPUH">Multi-Protocol Unified Hello</string>
+            <string id="MPUH_Help">Enables or disables the use of Multi-Protocol Unified Hello.  This protocol will never be used by Schannel SSP.</string>
+            <!-- PCT 1.0 -->
+            <string id="PCTv1">PCT 1.0</string>
+            <string id="PCTv1_Help">Enables or disables the use of PCT 1.0.  This protocol will never be used by Schannel SSP.</string>
+            <!-- SSLv2 -->
+            <string id="SSLv2">SSL 2.0</string>
+            <string id="SSLv2_Help">Enables or disables the use of SSL 2.0.  By default for Windows clients, SSL 2.0 is disabled.
+
+Note that SSL 2.0 is insecure and must not be used.
+            </string>
+            <!-- SSLv3 -->
+            <string id="SSLv3">SSL 3.0</string>
+            <string id="SSLv3_Help">Enables or disables the use of SSL 3.0.
+
+SSL 3.0 is insecure when used with HTTP and weak when used with other protocols.  It is also obsolete.  TLS 1.1 or better should be used instead, if possible.
+            </string>
+            <!-- TLSv1.0 -->
+            <string id="TLSv10">TLS 1.0</string>
+            <string id="TLSv10_Help">Enables or disables the use of TLS 1.0.
+
+TLS 1.0 is largely still secure.  When used with HTTP, it can almost be made secure with careful configuration.  However, it may be required for backwards compatibility reasons.
+            </string>
+            <!-- TLSv1.1 -->
+            <string id="TLSv11">TLS 1.1</string>
+            <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.  TLS 1.1 and 1.2 are without known security issues.</string>
+            <!-- TLSv1.2 -->
+            <string id="TLSv12">TLS 1.2</string>
+            <string id="TLSv12_Help">Enables or disables the use of TLS 1.2.  TLS 1.1 and 1.2 are without known security issues.</string>
+
+
+            <!-- WEAK CIPHERS -->
+            <!-- NULL -->
+            <string id="NULL">NULL</string>
+            <string id="NULL_Help">Enables or disables the use of NULL encryption ciphers.  This is a weak cipher and should not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_RSA_WITH_NULL_SHA
+TLS_RSA_WITH_NULL_SHA256
+            </string>
+
+            <!-- DES 56/56 -->
+            <string id="DES_56">DES 56/56</string>
+            <string id="DES_56_Help">Enables or disables the use of the DES 56/56.  This is a weak cipher and should not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+            </string>
+
+            <!-- RC2 40/128 -->
+            <string id="RC2_40">RC2 40/128</string>
+            <string id="RC2_40_Help">Enables or disables the use of RC2 40/128.  This is a weak cipher and shoud not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+            </string>
+
+            <!-- RC2 56/128 -->
+            <string id="RC2_56">RC2 56/128</string>
+            <string id="RC2_56_Help">Enables or disables the use of RC2 56/128.  This is a weak cipher and shoud not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+            </string>
+
+            <!-- RC2 128/128 -->
+            <string id="RC2_128">RC2 128/128</string>
+            <string id="RC2_128_Help">Enables or disables the use of RC2 128/128.  This is a weak cipher and shoud not be used.</string>
+
+            <!-- RC4 40/128 -->
+            <string id="RC4_40">RC4 40/128</string>
+            <string id="RC4_40_Help">Enables or disables the use of RC4 40/128.  This is a weak cipher and shoud not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+            </string>
+
+            <!-- RC4 56/128 -->
+            <string id="RC4_56">RC4 56/128</string>
+            <string id="RC4_56_Help">Enables or disables the use of RC4 56/128.  This is a weak cipher and shoud not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
+            </string>
+
+            <!-- RC4 64/128 -->
+            <string id="RC4_64">RC4 64/128</string>
+            <string id="RC4_64_Help">Enables or disables the use of RC4 64/128.  This is a weak cipher and shoud not be used.</string>
+
+            <!-- RC4 128/128 -->
+            <string id="RC4_128">RC4 128/128</string>
+            <string id="RC4_128_Help">Enables or disables the use of RC4 128/128.  This is a weak cipher and shoud not be used.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_RSA_WITH_RC4_128_MD5
+SSL_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+            </string>
+
+
+            <!-- STRONG CIPHERS -->
+            <!-- Triple DES 168 -->
+            <string id="3DES">Triple DES 168</string>
+            <string id="3DES_Help">Enables or disables the use of Triple-DES 128.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_CK_DES_192_EDE_CBC_WITH_MD5
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+            </string>
+            
+            <!-- AES 128/128 -->
+            <string id="AES128">AES 128/128</string>
+            <string id="AES128_Help">Enables or disables the use of AES 128/128.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+            </string>
+            
+            <!-- AES 256/256 -->
+            <string id="AES256">AES 256/256</string>
+            <string id="AES256_Help">Enables or disables the use of AES 256/256.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+            </string>
+
+
+            <!-- HASHING ALGORITHMS -->
+            <!-- MD5 -->
+            <string id="MD5">MD5</string>
+            <string id="MD5_Help">Enables or disables the use of the MD5 hashing algorithm.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+SSL_CK_DES_192_EDE3_CBC_WITH_MD5
+SSL_CK_DES_64_CBC_WITH_MD5
+SSL_CK_RC4_128_EXPORT40_MD5
+SSL_CK_RC4_128_WITH_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_NULL_MD5
+TLS_RSA_WITH_RC4_128_MD5
+            </string>
+
+            <!-- SHA -->
+            <string id="SHA">SHA</string>
+            <string id="SHA_Help">Enables or disables the use of the SHA hashing algorithm.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_DES_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521
+TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA
+TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_NULL_SHA
+TLS_RSA_WITH_RC4_128_SHA
+            </string>
+
+            <!-- SHA-256 -->
+            <string id="SHA256">SHA-256</string>
+            <string id="SHA256_Help">Enables or disables the use of the SHA-256 hashing algorithm.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_NULL_SHA256
+            </string>
+            
+            <!-- SHA-384 -->
+            <string id="SHA384">SHA-384</string>
+            <string id="SHA384_Help">Enables or disables the use of the SHA-384 hashing algorithm.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
+            </string>
+
+            <!-- SHA-512 -->
+            <string id="SHA512">SHA-512</string>
+            <string id="SHA512_Help">Enables or disables the use of the SHA-512 hashing algorithm.</string>
+
+
+            <!-- KEY EXCHANGE ALGORITHMS -->
+            <!-- Diffie-Hellman -->
+            <string id="DH">Diffie-Hellman</string>
+            <string id="DH_Help">Enables or disables the use of the Diffie-Hellman key exchange algorithm.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_DHE_DSS_WITH_DES_CBC_SHA
+            </string>
+
+            <!-- PKCS -->
+            <string id="PKCS">PKCS</string>
+            <string id="PKCS_Help">Enables or disables the use of the PKCS key exchange algorithm.</string>
+            
+            <!-- ECDH -->
+            <string id="ECDH">ECDH</string>
+            <string id="ECDH_Help">Enables or disables the use of the Elliptic-Curve Diffie-Hellman key exchange algorithm.
+
+Changing this setting will have an effect on whether the following ciphers can be selected for use:
+
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
+            </string>
+        </stringTable>
+
+        <presentationTable>
+            <!-- PROTOCOLS -->
+            <presentation id="MPUH">
+                <checkBox refId="MPUH_ClientCheckbox" defaultChecked="false">Enable Client-side Multi-Protocol Unified Hello (eg., Internet Explorer)</checkBox>
+                <checkBox refId="MPUH_ServerCheckbox" defaultChecked="false">Enable Server-side Multi-Protocol Unified Hello (eg., IIS)</checkBox>
+            </presentation>
+            <presentation id="PCTv1">
+                <checkBox refId="PCTv1_ClientCheckbox" defaultChecked="false">Enable Client-side PCT 1.0 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="PCTv1_ServerCheckbox" defaultChecked="false">Enable Server-side PCT 1.0 (eg., IIS)</checkBox>
+            </presentation>
+            <presentation id="SSLv2">
+                <checkBox refId="SSLv2_ClientCheckbox" defaultChecked="false">Enable Client-side SSL 2.0 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="SSLv2_ServerCheckbox" defaultChecked="false">Enable Server-side SSL 2.0 (eg., IIS)</checkBox>
+            </presentation>
+            <presentation id="SSLv3">
+                <checkBox refId="SSLv3_ClientCheckbox" defaultChecked="false">Enable Client-side SSL 3.0 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="SSLv3_ServerCheckbox" defaultChecked="false">Enable Server-side SSL 3.0 (eg., IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv10">
+                <checkBox refId="TLSv10_ClientCheckbox" defaultChecked="true">Enable Client-side TLS 1.0 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="TLSv10_ServerCheckbox" defaultChecked="true">Enable Server-side TLS 1.0 (eg., IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv11">
+                <checkBox refId="TLSv11_ClientCheckbox" defaultChecked="true">Enable Client-side TLS 1.1 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="TLSv11_ServerCheckbox" defaultChecked="true">Enable Server-side TLS 1.1 (eg., IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv12">
+                <checkBox refId="TLSv12_ClientCheckbox" defaultChecked="true">Enable Client-side TLS 1.2 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="TLSv12_ServerCheckbox" defaultChecked="true">Enable Server-side TLS 1.2 (eg., IIS)</checkBox>
+            </presentation>
+
+
+            <!-- CIPHERS -->
+            <presentation id="NULL">
+                <checkBox refId="NULL_Checkbox" defaultChecked="false">Enable use of the NULL cipher</checkBox>
+            </presentation>
+            <presentation id="DES_56">
+                <checkBox refId="DES_56_Checkbox" defaultChecked="false">Enable use of the DES 56/56 cipher</checkBox>
+            </presentation>
+            <presentation id="RC2_40">
+                <checkBox refId="RC2_40_Checkbox" defaultChecked="false">Enable use of the RC2 40/128 cipher</checkBox>
+            </presentation>
+            <presentation id="RC2_56">
+                <checkBox refId="RC2_56_Checkbox" defaultChecked="false">Enable use of the RC2 56/128 cipher</checkBox>
+            </presentation>
+            <presentation id="RC2_128">
+                <checkBox refId="RC2_128_Checkbox" defaultChecked="false">Enable use of the RC2 128/128 cipher</checkBox>
+            </presentation>
+            <presentation id="RC4_40">
+                <checkBox refId="RC4_40_Checkbox" defaultChecked="false">Enable use of the RC4 40/128 cipher</checkBox>
+            </presentation>
+            <presentation id="RC4_56">
+                <checkBox refId="RC4_56_Checkbox" defaultChecked="false">Enable use of the RC4 56/128 cipher</checkBox>
+            </presentation>
+            <presentation id="RC4_64">
+                <checkBox refId="RC4_64_Checkbox" defaultChecked="false">Enable use of the RC4 64/128 cipher</checkBox>
+            </presentation>
+            <presentation id="RC4_128">
+                <checkBox refId="RC4_128_Checkbox" defaultChecked="false">Enable use of the RC4 128/128 cipher</checkBox>
+            </presentation>
+            <presentation id="3DES">
+                <checkBox refId="3DES_Checkbox" defaultChecked="false">Enable use of the Triple-DES 168/168 cipher</checkBox>
+            </presentation>
+            <presentation id="AES128">
+                <checkBox refId="AES128_Checkbox" defaultChecked="false">Enable use of the AES 128/128 cipher</checkBox>
+            </presentation>
+            <presentation id="AES256">
+                <checkBox refId="AES256_Checkbox" defaultChecked="false">Enable use of the AES 256/256 cipher</checkBox>
+            </presentation>
+            <presentation id="MD5">
+                <checkBox refId="MD5_Checkbox" defaultChecked="false">Enable use of the MD5 hashing algorithm</checkBox>
+            </presentation>
+            <presentation id="SHA">
+                <checkBox refId="SHA_Checkbox" defaultChecked="false">Enable use of the SHA (SHA-1) hashing algorithm</checkBox>
+            </presentation>
+            <presentation id="SHA256">
+                <checkBox refId="SHA256_Checkbox" defaultChecked="false">Enable use of the SHA-256 hashing algorithm</checkBox>
+            </presentation>
+            <presentation id="SHA384">
+                <checkBox refId="SHA384_Checkbox" defaultChecked="false">Enable use of the SHA-384 hashing algorithm</checkBox>
+            </presentation>
+            <presentation id="SHA512">
+                <checkBox refId="SHA512_Checkbox" defaultChecked="false">Enable use of the SHA-512 hashing algorithm</checkBox>
+            </presentation>
+            <presentation id="DH">
+                <checkBox refId="DH_Checkbox" defaultChecked="false">Enable use of the Diffie-Hellman key exchange algorithm</checkBox>
+            </presentation>
+            <presentation id="PKCS">
+                <checkBox refId="PKCS_Checkbox" defaultChecked="false">Enable use of the PKCS key exchange algorithm</checkBox>
+            </presentation>
+            <presentation id="ECDH">
+                <checkBox refId="ECDH_Checkbox" defaultChecked="false">Enable use of the Elliptic-Curve Diffie-Hellman key exchange algorithm</checkBox>
+            </presentation>
+        </presentationTable>
+    </resources>
+</policyDefinitionResources>
