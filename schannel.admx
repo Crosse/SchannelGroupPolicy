@@ -324,7 +324,7 @@
         <policy name="TLSv1.2" class="Machine" displayName="$(string.TLSv12)"
                 explainText="$(string.TLSv12_Help)"
                 presentation="$(presentation.TLSv12)"
-                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0">
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2">
             <parentCategory ref="Protocols" />
             <supportedOn ref="windows:SUPPORTED_Windows8" />
             <elements>
