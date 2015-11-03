@@ -153,7 +153,7 @@ TLS_RSA_WITH_3DES_EDE_CBC_SHA
 
             <!-- AES 128/128 -->
             <string id="AES128">AES 128/128</string>
-            <string id="AES128_Help">Enables or disables the use of AES 128/128.
+            <string id="AES128_Help">Enables or disables the use of AES 128/128.  Note that in order for Windows 2003 to support AES-128, hotfix KB948963 must be installed.
 
 Changing this setting will have an effect on whether the following ciphers can be selected for use:
 
@@ -180,7 +180,7 @@ TLS_RSA_WITH_AES_128_CBC_SHA256
 
             <!-- AES 256/256 -->
             <string id="AES256">AES 256/256</string>
-            <string id="AES256_Help">Enables or disables the use of AES 256/256.
+            <string id="AES256_Help">Enables or disables the use of AES 256/256.  Note that in order for Windows 2003 to support AES-256, hotfix KB948963 must be installed.
 
 Changing this setting will have an effect on whether the following ciphers can be selected for use:
 
