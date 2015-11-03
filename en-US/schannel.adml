@@ -376,69 +376,6 @@ TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
                 <checkBox refId="TLSv12_ClientCheckbox" defaultChecked="true">Enable Client-side TLS 1.2 (eg., Internet Explorer)</checkBox>
                 <checkBox refId="TLSv12_ServerCheckbox" defaultChecked="true">Enable Server-side TLS 1.2 (eg., IIS)</checkBox>
             </presentation>
-
-
-            <!-- CIPHERS -->
-            <presentation id="NULL">
-                <checkBox refId="NULL_Checkbox" defaultChecked="false">Enable use of the NULL cipher</checkBox>
-            </presentation>
-            <presentation id="DES_56">
-                <checkBox refId="DES_56_Checkbox" defaultChecked="false">Enable use of the DES 56/56 cipher</checkBox>
-            </presentation>
-            <presentation id="RC2_40">
-                <checkBox refId="RC2_40_Checkbox" defaultChecked="false">Enable use of the RC2 40/128 cipher</checkBox>
-            </presentation>
-            <presentation id="RC2_56">
-                <checkBox refId="RC2_56_Checkbox" defaultChecked="false">Enable use of the RC2 56/128 cipher</checkBox>
-            </presentation>
-            <presentation id="RC2_128">
-                <checkBox refId="RC2_128_Checkbox" defaultChecked="false">Enable use of the RC2 128/128 cipher</checkBox>
-            </presentation>
-            <presentation id="RC4_40">
-                <checkBox refId="RC4_40_Checkbox" defaultChecked="false">Enable use of the RC4 40/128 cipher</checkBox>
-            </presentation>
-            <presentation id="RC4_56">
-                <checkBox refId="RC4_56_Checkbox" defaultChecked="false">Enable use of the RC4 56/128 cipher</checkBox>
-            </presentation>
-            <presentation id="RC4_64">
-                <checkBox refId="RC4_64_Checkbox" defaultChecked="false">Enable use of the RC4 64/128 cipher</checkBox>
-            </presentation>
-            <presentation id="RC4_128">
-                <checkBox refId="RC4_128_Checkbox" defaultChecked="false">Enable use of the RC4 128/128 cipher</checkBox>
-            </presentation>
-            <presentation id="3DES">
-                <checkBox refId="3DES_Checkbox" defaultChecked="false">Enable use of the Triple-DES 168/168 cipher</checkBox>
-            </presentation>
-            <presentation id="AES128">
-                <checkBox refId="AES128_Checkbox" defaultChecked="false">Enable use of the AES 128/128 cipher</checkBox>
-            </presentation>
-            <presentation id="AES256">
-                <checkBox refId="AES256_Checkbox" defaultChecked="false">Enable use of the AES 256/256 cipher</checkBox>
-            </presentation>
-            <presentation id="MD5">
-                <checkBox refId="MD5_Checkbox" defaultChecked="false">Enable use of the MD5 hashing algorithm</checkBox>
-            </presentation>
-            <presentation id="SHA">
-                <checkBox refId="SHA_Checkbox" defaultChecked="false">Enable use of the SHA (SHA-1) hashing algorithm</checkBox>
-            </presentation>
-            <presentation id="SHA256">
-                <checkBox refId="SHA256_Checkbox" defaultChecked="false">Enable use of the SHA-256 hashing algorithm</checkBox>
-            </presentation>
-            <presentation id="SHA384">
-                <checkBox refId="SHA384_Checkbox" defaultChecked="false">Enable use of the SHA-384 hashing algorithm</checkBox>
-            </presentation>
-            <presentation id="SHA512">
-                <checkBox refId="SHA512_Checkbox" defaultChecked="false">Enable use of the SHA-512 hashing algorithm</checkBox>
-            </presentation>
-            <presentation id="DH">
-                <checkBox refId="DH_Checkbox" defaultChecked="false">Enable use of the Diffie-Hellman key exchange algorithm</checkBox>
-            </presentation>
-            <presentation id="PKCS">
-                <checkBox refId="PKCS_Checkbox" defaultChecked="false">Enable use of the PKCS key exchange algorithm</checkBox>
-            </presentation>
-            <presentation id="ECDH">
-                <checkBox refId="ECDH_Checkbox" defaultChecked="false">Enable use of the Elliptic-Curve Diffie-Hellman key exchange algorithm</checkBox>
-            </presentation>
         </presentationTable>
     </resources>
 </policyDefinitionResources>
