@@ -102,6 +102,7 @@ for both client and server use.
 * [SSL 3.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 
 # Resources
+* [SSL Labs' SSL/TLS Deployment Best Practices][ssllabs]
 * [TLS Cipher Suites in Windows Server 2003 and XP][xp_tls]
 * [SSL Cipher Suites in Windows Server 2003 and XP][xp_ssl]
 * [Schannel Cipher Suites in Windows Server 2008 and Vista][vista]
@@ -113,6 +114,7 @@ for both client and server use.
 [IISCrypto]: https://www.nartac.com/Products/IISCrypto
 [policies]: https://msdn.microsoft.com/en-us/library/aa374292(v=vs.85).aspx
 [admx_install]:https://msdn.microsoft.com/en-us/library/bb530196.aspx
+[ssllabs]:https://www.ssllabs.com/projects/best-practices/index.html
 [xp_tls]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa380512(v=vs.85).aspx
 [xp_ssl]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa380124(v=vs.85).aspx
 [vista]: https://msdn.microsoft.com/en-us/library/windows/desktop/ff468651(v=vs.85).aspx
