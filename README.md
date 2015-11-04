@@ -1,7 +1,7 @@
 # Group Policy Template for Schannel
 
 I really like Nartac Software's [IIS Crypto][IISCrypto] tool for
-confguring protocols, ciphers, hashes and key exchange algorithms on
+configuring protocols, ciphers, hashes and key exchange algorithms on
 Windows.  However, since the tool simply makes changes to the local
 machine's registry it still requires a bit of work if you want to roll
 out these changes to multiple machines.  Sure, you could use IIS Crypto
@@ -14,9 +14,10 @@ Group Policy to do just that.
 This template simply twiddles values under the registry key
 `HKLM\CurrentControlSet\Control\SecurityProviders\Schannel`.
 
-Note that since that key does not reside under the _[Policies][policies]_ key,
-using this template will "tattoo" the settings onto the registry.  In other words,
-unapplying the policy will **not** revert these settings to their previous values.
+Note that since that key does not reside under the
+_[Policies][policies]_ key, using this template will "tattoo" the
+settings onto the registry.  In other words, removing the policy will
+**not** revert these settings to their previous values.
 
 # Installation
 
