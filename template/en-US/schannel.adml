@@ -22,17 +22,25 @@
             <!-- PROTOCOLS -->
             <!-- Multi-Protocol Unified Hello -->
             <string id="MPUH">Multi-Protocol Unified Hello</string>
-            <string id="MPUH_Help">Enables or disables the use of Multi-Protocol Unified Hello.  This protocol will never be used by Schannel SSP.</string>
+            <string id="MPUH_Help">Enables or disables the use of Multi-Protocol Unified Hello.  This protocol will never be used by Schannel SSP.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
+            </string>
 
             <!-- PCT 1.0 -->
             <string id="PCTv1">PCT 1.0</string>
-            <string id="PCTv1_Help">Enables or disables the use of PCT 1.0.  This protocol will never be used by Schannel SSP.</string>
+            <string id="PCTv1_Help">Enables or disables the use of PCT 1.0.  This protocol will never be used by Schannel SSP.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
+            </string>
 
             <!-- SSLv2 -->
             <string id="SSLv2">SSL 2.0</string>
             <string id="SSLv2_Help">Enables or disables the use of SSL 2.0.  By default for Windows clients, SSL 2.0 is disabled.
 
 Note that SSL 2.0 is insecure and must not be used.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
 
             <!-- SSLv3 -->
@@ -40,6 +48,8 @@ Note that SSL 2.0 is insecure and must not be used.
             <string id="SSLv3_Help">Enables or disables the use of SSL 3.0.
 
 SSL 3.0 is insecure when used with HTTP and weak when used with other protocols.  It is also obsolete.  TLS 1.1 or better should be used instead, if possible.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
 
             <!-- TLSv1.0 -->
@@ -47,16 +57,23 @@ SSL 3.0 is insecure when used with HTTP and weak when used with other protocols.
             <string id="TLSv10_Help">Enables or disables the use of TLS 1.0.
 
 TLS 1.0 is largely still secure.  When used with HTTP, it can almost be made secure with careful configuration.  However, it may be required for backwards compatibility reasons.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
 
             <!-- TLSv1.1 -->
             <string id="TLSv11">TLS 1.1</string>
-            <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.  TLS 1.1 and 1.2 are without known security issues.</string>
+            <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.  TLS 1.1 and 1.2 are without known security issues.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
+            </string>
 
             <!-- TLSv1.2 -->
             <string id="TLSv12">TLS 1.2</string>
-            <string id="TLSv12_Help">Enables or disables the use of TLS 1.2.  TLS 1.1 and 1.2 are without known security issues.</string>
+            <string id="TLSv12_Help">Enables or disables the use of TLS 1.2.  TLS 1.1 and 1.2 are without known security issues.
 
+Changing this setting will require a restart of the computer before the setting will take effect.
+            </string>
 
             <!-- WEAK CIPHERS -->
             <!-- NULL -->
