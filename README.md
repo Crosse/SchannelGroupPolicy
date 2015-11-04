@@ -104,6 +104,25 @@ require a restart of the computer.
 * [SSL 2.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 * [SSL 3.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 
+## Cipher Suite Order
+Setting the cipher suite order (the second half of IIS Crypto) for
+Windows involves configuring a Microsoft-delivered group policy setting.
+See [Prioritizing Schannel Cipher Suites][cipherorder] for more
+information.  (Note this line on that page, however:  "The list of
+cipher suites is limited to 1023 characters."  So you can't go nuts with
+this GPO like you can if you set the registry key outright, but the GPO
+is certainly easier to deploy.)  There are a few ways you can build your
+cipher suite list.
+
+* Use IIS Crypto as a guide.  Start the tool, click the "Best Practices"
+  button, and copy down what it gives you.
+* Use [Steve Gibson's list][cipherorder].  Just copy that list, remove
+  the line breaks, and paste it into the GPO setting.
+* Roll your own.
+
+Once you've got your list, add it to your GPO and roll it out!
+
+
 # Resources
 * [SSL Labs' SSL/TLS Deployment Best Practices][ssllabs]
 * [TLS Cipher Suites in Windows Server 2003 and XP][xp_tls]
@@ -117,6 +136,8 @@ require a restart of the computer.
 [IISCrypto]: https://www.nartac.com/Products/IISCrypto
 [policies]: https://msdn.microsoft.com/en-us/library/aa374292(v=vs.85).aspx
 [admx_install]:https://msdn.microsoft.com/en-us/library/bb530196.aspx
+[cipherorder]:https://msdn.microsoft.com/en-us/library/windows/desktop/bb870930(v=vs.85).aspx
+[grclist]:https://www.grc.com/miscfiles/SChannel_Cipher_Suites.txt
 [ssllabs]:https://www.ssllabs.com/projects/best-practices/index.html
 [xp_tls]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa380512(v=vs.85).aspx
 [xp_ssl]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa380124(v=vs.85).aspx
