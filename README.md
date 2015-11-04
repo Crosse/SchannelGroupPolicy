@@ -60,7 +60,10 @@ Screenshot:
 # Available Policy Settings
 Any of the following ciphers, hash algorithms, or key exchange algorithms can be
 enabled or disabled globally.  The protocols can be independently configured
-for both client and server use.
+for both client and server use.  Note that changes to the ciphers and
+hashes (and presumably, to the key exchange algorithms) will take effect
+immediately when the group policy is applied.  Changes to protocols
+require a restart of the computer.
 
 ## Ciphers
 * [Triple DES 168](https://en.wikipedia.org/wiki/Triple_DES)
