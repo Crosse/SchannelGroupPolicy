@@ -635,7 +635,7 @@
         <policy name="DH" class="Machine" displayName="$(string.DH)"
                 explainText="$(string.DH_Help)"
                 valueName="Enabled"
-                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\DH">
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman">
             <parentCategory ref="KeyEx" />
             <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
