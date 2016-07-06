@@ -226,7 +226,7 @@
         </policy>
 
         <!-- TLSv1.0 -->
-        <policy name="TLSv1.0" class="Machine" displayName="$(string.TLSv10)"
+        <policy name="TLSv10" class="Machine" displayName="$(string.TLSv10)"
                 explainText="$(string.TLSv10_Help)"
                 presentation="$(presentation.TLSv10)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0">
@@ -273,7 +273,7 @@
         </policy>
 
         <!-- TLSv1.1 -->
-        <policy name="TLSv1.1" class="Machine" displayName="$(string.TLSv11)"
+        <policy name="TLSv11" class="Machine" displayName="$(string.TLSv11)"
                 explainText="$(string.TLSv11_Help)"
                 presentation="$(presentation.TLSv11)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1">
@@ -321,7 +321,7 @@
         </policy>
 
         <!-- TLSv1.2 -->
-        <policy name="TLSv1.2" class="Machine" displayName="$(string.TLSv12)"
+        <policy name="TLSv12" class="Machine" displayName="$(string.TLSv12)"
                 explainText="$(string.TLSv12_Help)"
                 presentation="$(presentation.TLSv12)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2">
