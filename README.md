@@ -116,7 +116,7 @@ cipher suite list.
 
 * Use IIS Crypto as a guide.  Start the tool, click the "Best Practices"
   button, and copy down what it gives you.
-* Use [Steve Gibson's list][cipherorder].  Just copy that list, remove
+* Use [Steve Gibson's list][grclist].  Just copy that list, remove
   the line breaks, and paste it into the GPO setting.
 * Roll your own.
 
