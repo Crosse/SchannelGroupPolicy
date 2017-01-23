@@ -505,11 +505,11 @@
             </disabledValue>
         </policy>
 
-        <!-- Triple-DES 168/168 -->
+        <!-- Triple-DES 168 -->
         <policy name="3DES" class="Machine" displayName="$(string.3DES)"
                 explainText="$(string.3DES_Help)"
                 valueName="Enabled"
-                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168/168">
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168">
             <parentCategory ref="Ciphers" />
             <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
