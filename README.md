@@ -10,6 +10,10 @@ startup script GPO, but I wanted a more Group Policy-integrated way to
 enable or disable things.  So I created an administrative template for
 Group Policy to do just that.
 
+***Note**: I no longer maintain Windows servers for my job, so this may
+be out of date. If you notice something that needs to be updated, please
+submit an issue or a pull request!*
+
 # What Does it Do?
 This template simply twiddles values under the registry key
 `HKLM\CurrentControlSet\Control\SecurityProviders\Schannel`.
