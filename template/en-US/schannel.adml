@@ -367,6 +367,20 @@ TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
             </string>
+
+            <!-- .NET Framework 4 -->
+            <string id="dotnet4">.NET Framework 4 Strong Crypto</string>
+            <string id="dotnet4_Help">Enables or disables the use of TLS 1.1 and TLS 1.2 in .NET Framework 4.
+
+If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be enabled by default for applications targeting .NET Framework 4.6 or higher and disabled otherwise.
+            </string>
+
+            <!-- .NET Framework 2 -->
+            <string id="dotnet2">.NET Framework 2 Strong Crypto</string>
+            <string id="dotnet2_Help">Enables or disables the use of TLS 1.1 and TLS 1.2 in .NET Framework 2.
+
+If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be disabled by default.
+            </string>
         </stringTable>
 
         <presentationTable>
