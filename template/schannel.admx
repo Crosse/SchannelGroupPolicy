@@ -675,5 +675,69 @@
                 <decimal value="0" />
             </disabledValue>
         </policy>
+
+            <!-- .NET Framework 4 -->
+        <policy name="dotnet4" class="Machine" displayName="$(string.dotnet4)"
+                explainText="$(string.dotnet4_Help)"
+                key="SOFTWARE\Microsoft\.NETFramework\v4.0.30319">
+            <parentCategory ref="cypherstrength:SSLConfiguration" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
+            <enabledList>
+                <item key="SOFTWARE\Microsoft\.NETFramework\v4.0.30319" valueName="SchUseStrongCrypto">
+                    <value>
+                        <decimal value="1" />
+                    </value>
+                </item>
+                <item key="SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319" valueName="SchUseStrongCrypto">
+                    <value>
+                        <decimal value="1" />
+                    </value>
+                </item>
+            </enabledList>
+            <disabledList>
+                <item key="SOFTWARE\Microsoft\.NETFramework\v4.0.30319" valueName="SchUseStrongCrypto">
+                    <value>
+                        <decimal value="0" />
+                    </value>
+                </item>
+                <item key="SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319" valueName="SchUseStrongCrypto">
+                    <value>
+                        <decimal value="0" />
+                    </value>
+                  </item>
+            </disabledList>
+        </policy>
+
+        <!-- .NET Framework 2 -->
+        <policy name="dotnet2" class="Machine" displayName="$(string.dotnet2)"
+                explainText="$(string.dotnet2_Help)"
+                key="SOFTWARE\Microsoft\.NETFramework\v2.0.50727">
+            <parentCategory ref="cypherstrength:SSLConfiguration" />
+            <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
+            <enabledList>
+                <item key="SOFTWARE\Microsoft\.NETFramework\v2.0.50727" valueName="SchUseStrongCrypto">
+                  <value>
+                    <decimal value="1" />
+                  </value>
+                </item>
+                <item key="SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727" valueName="SchUseStrongCrypto">
+                  <value>
+                    <decimal value="1" />
+                  </value>
+                </item>
+            </enabledList>
+            <disabledList>
+                <item key="SOFTWARE\Microsoft\.NETFramework\v2.0.50727" valueName="SchUseStrongCrypto">
+                  <value>
+                    <decimal value="0" />
+                  </value>
+                </item>
+                <item key="SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727" valueName="SchUseStrongCrypto">
+                  <value>
+                    <decimal value="0" />
+                  </value>
+                </item>
+            </disabledList>
+        </policy>
     </policies>
 </policyDefinitions>
