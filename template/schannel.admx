@@ -8,6 +8,17 @@
         <using prefix="cypherstrength" namespace="Microsoft.Policies.CypherStrength" />
     </policyNamespaces>
     <resources minRequiredRevision="1.0" />
+    <supportedOn>
+        <definitions>
+            <definition name="SUPPORTED_3174644" displayName="$(string.SUPPORTED_3174644)">
+              <or>
+                  <range ref="products:MicrosoftWindows" minVersionIndex="4"/>
+                  <range ref="products:WindowsServer2008" minVersionIndex="2"/>
+                  <range ref="products:MicrosoftWindowsVista" minVersionIndex="2"/>
+              </or>
+          </definition>
+      </definitions>
+    </supportedOn>
     <categories>
         <category name="Protocols" displayName="$(string.Protocols)">
             <parentCategory ref="cypherstrength:SSLConfiguration" />
@@ -645,6 +656,37 @@
                 <decimal value="0" />
             </disabledValue>
         </policy>
+        <policy name="DHServer" class="Machine" displayName="$(string.DHServer)"
+                explainText="$(string.DHServer_Help)"
+                presentation="$(presentation.DHServer)"
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman">
+            <parentCategory ref="KeyEx" />
+            <supportedOn ref="SUPPORTED_3174644" />
+            <elements>
+                <enum id="DHServer_MinLength" valueName="ServerMinKeyBitLength" >
+                    <item displayName="$(string.DH_Value1024)" >
+                        <value>
+                            <decimal value="1024" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.DH_Value2048)">
+                        <value>
+                            <decimal value="2048" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.DH_Value3072)">
+                        <value>
+                            <decimal value="3072" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.DH_Value4096)">
+                        <value>
+                            <decimal value="4096" />
+                        </value>
+                    </item>
+                </enum>
+            </elements>
+        </policy>
 
         <!-- PKCS -->
         <policy name="PKCS" class="Machine" displayName="$(string.PKCS)"
@@ -676,7 +718,7 @@
             </disabledValue>
         </policy>
 
-            <!-- .NET Framework 4 -->
+        <!-- .NET Framework 4 -->
         <policy name="dotnet4" class="Machine" displayName="$(string.dotnet4)"
                 explainText="$(string.dotnet4_Help)"
                 key="SOFTWARE\Microsoft\.NETFramework\v4.0.30319">

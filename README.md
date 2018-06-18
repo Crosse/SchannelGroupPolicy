@@ -135,7 +135,7 @@ Once you've got your list, add it to your GPO and roll it out!
 * [Schannel Cipher Suites in Windows Server 2008 R2 and above][2008r2]
 * [How to restrict the use of certain cryptographic algorithms and protocols in Schannel.dll][restrict_usage]
 * [Managing Group Policy ADMX Files Step-by-Step Guide][admx_install]
-
+* [Transport Layer Security (TLS) registry settings][TLS_registry]
 
 [IISCrypto]: https://www.nartac.com/Products/IISCrypto
 [policies]: https://msdn.microsoft.com/en-us/library/aa374292(v=vs.85).aspx
@@ -148,3 +148,4 @@ Once you've got your list, add it to your GPO and roll it out!
 [vista]: https://msdn.microsoft.com/en-us/library/windows/desktop/ff468651(v=vs.85).aspx
 [2008r2]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa374757(v=vs.85).aspx
 [restrict_usage]: https://support.microsoft.com/en-us/kb/245030
+[TLS_registry]: https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings
