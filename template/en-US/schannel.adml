@@ -10,6 +10,9 @@
     <description>This file contains settings for enabling or disabling TLS and SSL versions.</description>
     <resources>
         <stringTable>
+            <string id="SUPPORTED_3174644">At least Windows 10; 
+At least Windows Server 2008 SP2 or Windows Vista SP2 with KB3174644 </string>
+
             <!-- CATEGORIES -->
             <string id="Protocols">Protocols</string>
             <string id="WeakProtocols">Weak Protocols</string>
@@ -326,8 +329,11 @@ TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
 TLS_DHE_DSS_WITH_AES_256_CBC_SHA
 TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
 TLS_DHE_DSS_WITH_DES_CBC_SHA
+            </string>
+            <string id="DHServer">Diffie-Hellman Server-side Key Shares</string>
+            <string id="DHServer_Help">Sets the minimum Diffie-Hellman ephemeral key shares for TLS servers.
 
-Please see KB3174644 for more information on DH modulus length. 2048 is the currently recommended value.
+Please see Microsoft Security Advisory 3174644 for more information on DH modulus length. 2048 is the currently recommended minimum value.
             </string>
             <string id="DH_Value1024">1024</string>
             <string id="DH_Value2048">2048</string>
@@ -392,8 +398,8 @@ If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be disabled by de
 
         <presentationTable>
             <!-- KEY EXCHANGE ALGORITHMS -->
-            <presentation id="DH">
-              <dropdownList refId="DH_ServerMinKeyBitLength">Server side DH modulus length</dropdownList>
+            <presentation id="DHServer">
+              <dropdownList refId="DHServer_MinLength">Server side DH modulus minimum length</dropdownList>
             </presentation>
 
             <!-- PROTOCOLS -->
