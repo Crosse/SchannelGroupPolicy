@@ -44,11 +44,11 @@ template files in the domain's central store.
 To make the template available automatically to all Group Policy
 administrators in a domain, perform the following on a domain
 controller:
-* Copy the language-neutral ADMX file(s) to `%SYSTEMROOOT%\sysvol\domain\policies\PolicyDefinitions`.
-* Copy the language-specific ADML file(s) to `%SYSTEMROOOT%\sysvol\domain\policies\PolicyDefinitions\[MUIculture]`
+* Copy the language-neutral ADMX file(s) to `%SYSTEMROOT%\sysvol\domain\policies\PolicyDefinitions`.
+* Copy the language-specific ADML file(s) to `%SYSTEMROOT%\sysvol\domain\policies\PolicyDefinitions\[MUIculture]`
   (for example, the U.S. English ADMX language specific file will be
   stored in
-  `%SYSTEMROOOT%\sysvol\domain\policies\PolicyDefinitions\en-us`.)
+  `%SYSTEMROOT%\sysvol\domain\policies\PolicyDefinitions\en-us`.)
 
 # Usage
 
