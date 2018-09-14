@@ -335,6 +335,11 @@ TLS_DHE_DSS_WITH_DES_CBC_SHA
 
 Please see Microsoft Security Advisory 3174644 for more information on DH modulus length. 2048 is the currently recommended minimum value.
             </string>
+            <string id="DHClient">Diffie-Hellman Client-side Key Size</string>
+            <string id="DHClient_Help">Sets the minimum Diffie-Hellman ephemeral key size for TLS Client.
+
+Please see Microsoft Security Advisory 3174644 for more information on DH modulus length. 1024 is the currently recommended minimum value.
+            </string>			
             <string id="DH_Value1024">1024</string>
             <string id="DH_Value2048">2048</string>
             <string id="DH_Value3072">3072</string>
@@ -343,6 +348,15 @@ Please see Microsoft Security Advisory 3174644 for more information on DH modulu
             <!-- PKCS -->
             <string id="PKCS">PKCS</string>
             <string id="PKCS_Help">Enables or disables the use of the PKCS key exchange algorithm.</string>
+            <string id="PKCSClient">PKCS Client-side Key Size</string>
+            <string id="PKCSClient_Help">Sets the minimum PKCS ephemeral key size for TLS Client.
+
+Please see Microsoft Security Advisory 3174644 or https://support.microsoft.com/en-us/help/3174644/microsoft-security-advisory-updated-support-for-diffie-hellman-key-exc for more information on PKCS modulus length. 1024 is the currently recommended minimum value.
+            </string>	
+            <string id="PKCS_Value1024">1024</string>
+            <string id="PKCS_Value2048">2048</string>
+            <string id="PKCS_Value3072">3072</string>
+            <string id="PKCS_Value4096">4096</string>
 
             <!-- ECDH -->
             <string id="ECDH">ECDH</string>
@@ -401,7 +415,12 @@ If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be disabled by de
             <presentation id="DHServer">
               <dropdownList refId="DHServer_MinLength">Server side DH modulus minimum length</dropdownList>
             </presentation>
-
+            <presentation id="DHClient">
+              <dropdownList refId="DHClient_MinLength">Client side DH modulus minimum length</dropdownList>
+            </presentation>
+            <presentation id="PKCSClient">
+              <dropdownList refId="PKCSClient_MinLength">Client side PKCS modulus minimum length</dropdownList>
+            </presentation>			
             <!-- PROTOCOLS -->
             <presentation id="MPUH">
                 <checkBox refId="MPUH_ClientCheckbox" defaultChecked="false">Enable Client-side Multi-Protocol Unified Hello (eg., Internet Explorer)</checkBox>

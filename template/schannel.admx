@@ -687,6 +687,37 @@
                 </enum>
             </elements>
         </policy>
+        <policy name="DHClient" class="Machine" displayName="$(string.DHClient)"
+                explainText="$(string.DHClient_Help)"
+                presentation="$(presentation.DHClient)"
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman">
+            <parentCategory ref="KeyEx" />
+            <supportedOn ref="SUPPORTED_3174644" />
+            <elements>
+                <enum id="DHClient_MinLength" valueName="ClientMinKeyBitLength" >
+                    <item displayName="$(string.DH_Value1024)" >
+                        <value>
+                            <decimal value="1024" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.DH_Value2048)">
+                        <value>
+                            <decimal value="2048" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.DH_Value3072)">
+                        <value>
+                            <decimal value="3072" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.DH_Value4096)">
+                        <value>
+                            <decimal value="4096" />
+                        </value>
+                    </item>
+                </enum>
+            </elements>
+        </policy>
 
         <!-- PKCS -->
         <policy name="PKCS" class="Machine" displayName="$(string.PKCS)"
@@ -701,6 +732,37 @@
             <disabledValue>
                 <decimal value="0" />
             </disabledValue>
+        </policy>
+        <policy name="PKCSClient" class="Machine" displayName="$(string.PKCSClient)"
+                explainText="$(string.PKCSClient_Help)"
+                presentation="$(presentation.PKCSClient)"
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS">
+            <parentCategory ref="KeyEx" />
+            <supportedOn ref="SUPPORTED_3174644" />
+            <elements>
+                <enum id="PKCSClient_MinLength" valueName="ClientMinKeyBitLength" >
+                    <item displayName="$(string.PKCS_Value1024)" >
+                        <value>
+                            <decimal value="1024" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.PKCS_Value2048)">
+                        <value>
+                            <decimal value="2048" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.PKCS_Value3072)">
+                        <value>
+                            <decimal value="3072" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.PKCS_Value4096)">
+                        <value>
+                            <decimal value="4096" />
+                        </value>
+                    </item>
+                </enum>
+            </elements>
         </policy>
 
         <!-- Elliptic-Curve Diffie-Hellman -->
