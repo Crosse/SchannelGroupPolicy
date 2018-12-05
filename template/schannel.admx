@@ -527,7 +527,7 @@
                 explainText="$(string.3DES_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168">
-            <parentCategory ref="Ciphers" />
+            <parentCategory ref="WeakCiphers" />
             <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
@@ -575,7 +575,7 @@
                 explainText="$(string.MD5_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5">
-            <parentCategory ref="Hashes" />
+            <parentCategory ref="WeakHashes" />
             <supportedOn ref="windows:SUPPORTED_WindowsNET" />
             <enabledValue>
                 <decimal value="4294967295" />
@@ -590,7 +590,7 @@
                 explainText="$(string.SHA_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA">
-            <parentCategory ref="Hashes" />
+            <parentCategory ref="WeakHashes" />
             <supportedOn ref="windows:SUPPORTED_WindowsNET" />
             <enabledValue>
                 <decimal value="4294967295" />
