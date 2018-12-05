@@ -14,7 +14,7 @@ Group Policy to do just that.
 be out of date. If you notice something that needs to be updated, please
 submit an issue or a pull request!*
 
-***Note***: PedroAsani here, I decided to take this and do some updates since Crosse has said they no longer will. The first is to move TLS 1.0 into Weak Protocols. I'll be doing similar changes to bring the use of the settings in line with Best Practice and their placement will be based entirely on known vulnerabilities.
+***Note***: PedroAsani here, I decided to take this and do some updates since Crosse has said they no longer will. The first is to move TLS 1.0 into Weak Protocols, MD5 and SHA-1 into Weak Hash Algorithms, Triple-DES into Weak Ciphers, and Diffie-Hellman into Weak Key Exchange Algorithms. I'll be doing similar changes to bring the use of the settings in line with Best Practice and their placement will be based entirely on known vulnerabilities. I will not be changing default behavior on any at this time.
 
 # What Does it Do?
 This template simply twiddles values under the registry key
@@ -72,7 +72,6 @@ immediately when the group policy is applied.  Changes to protocols
 require a restart of the computer.
 
 ## Ciphers
-* [Triple DES 168](https://en.wikipedia.org/wiki/Triple_DES)
 * [AES 128/128](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 * [AES 256/256](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
@@ -86,18 +85,23 @@ require a restart of the computer.
 * [RC4 56/128](https://en.wikipedia.org/wiki/RC4)
 * [RC4 64/128](https://en.wikipedia.org/wiki/RC4)
 * [RC4 128/128](https://en.wikipedia.org/wiki/RC4)
+* [Triple DES 168](https://en.wikipedia.org/wiki/Triple_DES)
 
 ## Hash Algorithms
-* [MD5](https://en.wikipedia.org/wiki/MD5)
-* [SHA](https://en.wikipedia.org/wiki/SHA-1) (also called "SHA-1")
 * [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
 * [SHA-384](https://en.wikipedia.org/wiki/SHA-2)
 * [SHA-512](https://en.wikipedia.org/wiki/SHA-2)
 
+### Hash Algorithms\Weak Hash Algorithms
+* [MD5](https://en.wikipedia.org/wiki/MD5)
+* [SHA](https://en.wikipedia.org/wiki/SHA-1) (also called "SHA-1")
+
 ## Key Exchange Algorithms
-* [Diffie-Hellman (DH)](https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange)
 * [PKCS](https://en.wikipedia.org/wiki/PKCS)
 * [Elliptic-Curve Diffie-Hellman (ECDH)](https://en.wikipedia.org/wiki/Elliptic_curve_Diffie–Hellman)
+
+### Key Exchange Algorithms\Weak Key Exchange Algorithms
+* [Diffie-Hellman (DH)](https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange)
 
 ## Protocols
 * [TLS 1.1](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.1)
