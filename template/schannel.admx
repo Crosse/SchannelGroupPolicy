@@ -241,7 +241,7 @@
                 explainText="$(string.TLSv10_Help)"
                 presentation="$(presentation.TLSv10)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0">
-            <parentCategory ref="Protocols" />
+            <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="TLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" valueName="">
