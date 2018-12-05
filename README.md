@@ -10,9 +10,11 @@ startup script GPO, but I wanted a more Group Policy-integrated way to
 enable or disable things.  So I created an administrative template for
 Group Policy to do just that.
 
-***Note**: I no longer maintain Windows servers for my job, so this may
+***Note***: I no longer maintain Windows servers for my job, so this may
 be out of date. If you notice something that needs to be updated, please
 submit an issue or a pull request!*
+
+***Note***: PedroAsani here, I decided to take this and do some updates since Crosse has said they no longer will. The first is to move TLS 1.0 into Weak Protocols. I'll be doing similar changes to bring the use of the settings in line with Best Practice and their placement will be based entirely on known vulnerabilities.
 
 # What Does it Do?
 This template simply twiddles values under the registry key
@@ -98,7 +100,6 @@ require a restart of the computer.
 * [Elliptic-Curve Diffie-Hellman (ECDH)](https://en.wikipedia.org/wiki/Elliptic_curve_Diffie–Hellman)
 
 ## Protocols
-* [TLS 1.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.0)
 * [TLS 1.1](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.1)
 * [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2)
 
@@ -107,6 +108,7 @@ require a restart of the computer.
 * [PCT 1.0](https://en.wikipedia.org/wiki/Private_Communications_Technology)
 * [SSL 2.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 * [SSL 3.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
+* [TLS 1.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.0)
 
 ## Cipher Suite Order
 Setting the cipher suite order (the second half of IIS Crypto) for
