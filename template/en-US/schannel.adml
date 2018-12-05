@@ -19,7 +19,9 @@ At least Windows Server 2008 SP2 or Windows Vista SP2 with KB3174644 </string>
             <string id="Ciphers">Ciphers</string>
             <string id="WeakCiphers">Weak Ciphers</string>
             <string id="Hashes">Hashes</string>
+            <string id="WeakHashes">Weak Hashes</string>
             <string id="KeyEx">Key Exchanges</string>
+            <string id="WeakKeyEx">Weak Key Exchanges</string>
 
 
             <!-- PROTOCOLS -->
