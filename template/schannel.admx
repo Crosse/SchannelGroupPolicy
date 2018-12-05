@@ -35,8 +35,14 @@
         <category name="Hashes" displayName="$(string.Hashes)">
             <parentCategory ref="cypherstrength:SSLConfiguration" />
         </category>
+        <category name="WeakHashes" displayName="$(string.WeakHashes)">
+            <parentCategory ref="schannel:Hashes" />
+        </category>
         <category name="KeyEx" displayName="$(string.KeyEx)">
             <parentCategory ref="cypherstrength:SSLConfiguration" />
+        </category>
+        <category name="WeakKeyEx" displayName="$(string.WeakKeyEx)">
+            <parentCategory ref="schannel:KeyEx" />
         </category>
     </categories>
 
