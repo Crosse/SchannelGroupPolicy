@@ -325,7 +325,6 @@
                         </item>
                     </trueList>
                     <falseList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server">
-                        <item valueName=""><value><decimal value="" /></value></item>
                         <item valueName="Enabled">
                             <value><decimal value="0" /></value>
                         </item>
