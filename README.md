@@ -70,7 +70,6 @@ immediately when the group policy is applied.  Changes to protocols
 require a restart of the computer.
 
 ## Ciphers
-* [Triple DES 168](https://en.wikipedia.org/wiki/Triple_DES)
 * [AES 128/128](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 * [AES 256/256](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
@@ -84,21 +83,25 @@ require a restart of the computer.
 * [RC4 56/128](https://en.wikipedia.org/wiki/RC4)
 * [RC4 64/128](https://en.wikipedia.org/wiki/RC4)
 * [RC4 128/128](https://en.wikipedia.org/wiki/RC4)
+* [Triple DES 168](https://en.wikipedia.org/wiki/Triple_DES)
 
 ## Hash Algorithms
-* [MD5](https://en.wikipedia.org/wiki/MD5)
-* [SHA](https://en.wikipedia.org/wiki/SHA-1) (also called "SHA-1")
 * [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
 * [SHA-384](https://en.wikipedia.org/wiki/SHA-2)
 * [SHA-512](https://en.wikipedia.org/wiki/SHA-2)
 
+### Hash Algorithms\Weak Hash Algorithms
+* [MD5](https://en.wikipedia.org/wiki/MD5)
+* [SHA](https://en.wikipedia.org/wiki/SHA-1) (also called "SHA-1")
+
 ## Key Exchange Algorithms
-* [Diffie-Hellman (DH)](https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange)
 * [PKCS](https://en.wikipedia.org/wiki/PKCS)
 * [Elliptic-Curve Diffie-Hellman (ECDH)](https://en.wikipedia.org/wiki/Elliptic_curve_Diffie–Hellman)
 
+### Key Exchange Algorithms\Weak Key Exchange Algorithms
+* [Diffie-Hellman (DH)](https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange)
+
 ## Protocols
-* [TLS 1.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.0)
 * [TLS 1.1](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.1)
 * [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2)
 
@@ -107,6 +110,7 @@ require a restart of the computer.
 * [PCT 1.0](https://en.wikipedia.org/wiki/Private_Communications_Technology)
 * [SSL 2.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 * [SSL 3.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
+* [TLS 1.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.0)
 
 ## Cipher Suite Order
 Setting the cipher suite order (the second half of IIS Crypto) for

@@ -35,8 +35,14 @@
         <category name="Hashes" displayName="$(string.Hashes)">
             <parentCategory ref="cypherstrength:SSLConfiguration" />
         </category>
+        <category name="WeakHashes" displayName="$(string.WeakHashes)">
+            <parentCategory ref="schannel:Hashes" />
+        </category>
         <category name="KeyEx" displayName="$(string.KeyEx)">
             <parentCategory ref="cypherstrength:SSLConfiguration" />
+        </category>
+        <category name="WeakKeyEx" displayName="$(string.WeakKeyEx)">
+            <parentCategory ref="schannel:KeyEx" />
         </category>
     </categories>
 
@@ -241,7 +247,7 @@
                 explainText="$(string.TLSv10_Help)"
                 presentation="$(presentation.TLSv10)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0">
-            <parentCategory ref="Protocols" />
+            <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
                 <boolean id="TLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" valueName="">
@@ -319,7 +325,6 @@
                         </item>
                     </trueList>
                     <falseList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server">
-                        <item valueName=""><value><decimal value="" /></value></item>
                         <item valueName="Enabled">
                             <value><decimal value="0" /></value>
                         </item>
@@ -521,7 +526,7 @@
                 explainText="$(string.3DES_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168">
-            <parentCategory ref="Ciphers" />
+            <parentCategory ref="WeakCiphers" />
             <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
@@ -569,7 +574,7 @@
                 explainText="$(string.MD5_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5">
-            <parentCategory ref="Hashes" />
+            <parentCategory ref="WeakHashes" />
             <supportedOn ref="windows:SUPPORTED_WindowsNET" />
             <enabledValue>
                 <decimal value="4294967295" />
@@ -584,7 +589,7 @@
                 explainText="$(string.SHA_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA">
-            <parentCategory ref="Hashes" />
+            <parentCategory ref="WeakHashes" />
             <supportedOn ref="windows:SUPPORTED_WindowsNET" />
             <enabledValue>
                 <decimal value="4294967295" />
