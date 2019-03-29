@@ -14,8 +14,6 @@ Group Policy to do just that.
 be out of date. If you notice something that needs to be updated, please
 submit an issue or a pull request!*
 
-***Note**: PedroAsani here, I decided to take this and do some updates since Crosse has said they no longer will. The first is to move TLS 1.0 into Weak Protocols, MD5 and SHA-1 into Weak Hash Algorithms, Triple-DES into Weak Ciphers, and Diffie-Hellman into Weak Key Exchange Algorithms. I'll be doing similar changes to bring the use of the settings in line with Best Practice and their placement will be based entirely on known vulnerabilities. I will not be changing default behavior on any at this time.*
-
 # What Does it Do?
 This template simply twiddles values under the registry key
 `HKLM\CurrentControlSet\Control\SecurityProviders\Schannel`.
