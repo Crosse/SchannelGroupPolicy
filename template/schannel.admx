@@ -382,8 +382,103 @@
                 </boolean>
             </elements>
         </policy>
+        
+        <!-- DTLSv1.0 -->
+        <policy name="DTLSv10" class="Machine" displayName="$(string.DTLSv10)"
+                explainText="$(string.DTLSv10_Help)"
+                presentation="$(presentation.DTLSv10)"
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0">
+            <parentCategory ref="Protocols" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
+            <elements>
+                <boolean id="DTLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client" valueName="">
+                    <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client">
+                        <item valueName="Enabled">
+                            <value><decimal value="1" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="0" /></value>
+                        </item>
+                    </trueList>
+                    <falseList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client">
+                        <item valueName="Enabled">
+                            <value><decimal value="0" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="1" /></value>
+                        </item>
+                    </falseList>
+                </boolean>
+                <boolean id="DTLSv10_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server" valueName="">
+                    <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server">
+                        <item valueName="Enabled">
+                            <value><decimal value="1" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="0" /></value>
+                        </item>
+                    </trueList>
+                    <falseList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server">
+                        <item valueName="Enabled">
+                            <value><decimal value="0" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="1" /></value>
+                        </item>
+                    </falseList>
+                </boolean>
+            </elements>
+        </policy>
+        
+                <!-- DTLSv1.2 -->
+        <policy name="DTLSv12" class="Machine" displayName="$(string.DTLSv12)"
+                explainText="$(string.DTLSv12_Help)"
+                presentation="$(presentation.DTLSv12)"
+                key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2">
+            <parentCategory ref="Protocols" />
+            <supportedOn ref="windows:SUPPORTED_Windows7" />
+            <elements>
+                <boolean id="DTLSv12_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client" valueName="">
+                    <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client">
+                        <item valueName="Enabled">
+                            <value><decimal value="1" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="0" /></value>
+                        </item>
+                    </trueList>
+                    <falseList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client">
+                        <item valueName="Enabled">
+                            <value><decimal value="0" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="1" /></value>
+                        </item>
+                    </falseList>
+                </boolean>
+                <boolean id="DTLSv12_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server" valueName="">
+                    <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server">
+                        <item valueName="Enabled">
+                            <value><decimal value="1" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="0" /></value>
+                        </item>
+                    </trueList>
+                    <falseList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server">
+                        <item valueName="Enabled">
+                            <value><decimal value="0" /></value>
+                        </item>
+                        <item valueName="DisabledByDefault">
+                            <value><decimal value="1" /></value>
+                        </item>
+                    </falseList>
+                </boolean>
+            </elements>
+        </policy>
         <!-- END PROTOCOLS -->
 
+        
 
         <!-- ENCRYPTION CIPHERS -->
         <!-- NULL -->
