@@ -80,6 +80,20 @@ Changing this setting will require a restart of the computer before the setting 
 Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
 
+            <!-- DTLSv1.0 -->
+            <string id="DTLSv10">DTLS 1.0</string>
+            <string id="DTLSv10_Help">Enables or disables the use of DTLS 1.0.  Windows 7 and Windows Server 2008 R2 and above.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
+            </string>
+             
+            <!-- DTLSv1.2 -->
+            <string id="DTLSv12">DTLS 1.2</string>
+            <string id="DTLSv12_Help">Enables or disables the use of DTLS 1.2.  Windows 10 v1607 and above.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
+            </string>
+             
             <!-- WEAK CIPHERS -->
             <!-- NULL -->
             <string id="NULL">NULL</string>
@@ -451,6 +465,14 @@ If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be disabled by de
             <presentation id="TLSv12">
                 <checkBox refId="TLSv12_ClientCheckbox" defaultChecked="true">Enable Client-side TLS 1.2 (eg., Internet Explorer)</checkBox>
                 <checkBox refId="TLSv12_ServerCheckbox" defaultChecked="true">Enable Server-side TLS 1.2 (eg., IIS)</checkBox>
+            </presentation>
+             <presentation id="DTLSv10">
+                <checkBox refId="DTLSv10_ClientCheckbox" defaultChecked="true">Enable Client-side DTLS 1.0 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="DTLSv10_ServerCheckbox" defaultChecked="true">Enable Server-side DTLS 1.0 (eg., IIS)</checkBox>
+            </presentation>
+             <presentation id="DTLSv12">
+                <checkBox refId="DTLSv12_ClientCheckbox" defaultChecked="true">Enable Client-side DTLS 1.2 (eg., Internet Explorer)</checkBox>
+                <checkBox refId="DTLSv12_ServerCheckbox" defaultChecked="true">Enable Server-side DTLS 1.2 (eg., IIS)</checkBox>
             </presentation>
         </presentationTable>
     </resources>
