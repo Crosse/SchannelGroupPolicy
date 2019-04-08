@@ -52,7 +52,7 @@ Changing this setting will require a restart of the computer before the setting 
             <string id="SSLv3">SSL 3.0</string>
             <string id="SSLv3_Help">Enables or disables the use of SSL 3.0.
 
-SSL 3.0 is insecure when used with HTTP and weak when used with other protocols.  It is also obsolete.  TLS 1.1 or better should be used instead, if possible.
+SSL 3.0 is insecure when used with HTTP and weak when used with other protocols.  It is also obsolete.  TLS 1.2 or better should be used instead, if possible.
 
 Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
@@ -68,14 +68,14 @@ Changing this setting will require a restart of the computer before the setting 
 
             <!-- TLSv1.1 -->
             <string id="TLSv11">TLS 1.1</string>
-            <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.  TLS 1.1 and 1.2 are without known security issues.
+            <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.
 
 Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
 
             <!-- TLSv1.2 -->
             <string id="TLSv12">TLS 1.2</string>
-            <string id="TLSv12_Help">Enables or disables the use of TLS 1.2.  TLS 1.1 and 1.2 are without known security issues.
+            <string id="TLSv12_Help">Enables or disables the use of TLS 1.2.  TLS 1.2 is without known security issues.
 
 Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
