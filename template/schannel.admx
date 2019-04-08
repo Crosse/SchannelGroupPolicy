@@ -294,7 +294,7 @@
                 explainText="$(string.TLSv11_Help)"
                 presentation="$(presentation.TLSv11)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1">
-            <parentCategory ref="Protocols" />
+            <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
                 <boolean id="TLSv11_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" valueName="">
