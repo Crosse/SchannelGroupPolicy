@@ -102,8 +102,10 @@ require a restart of the computer.
 * [Diffie-Hellman (DH)](https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange)
 
 ## Protocols
-* [TLS 1.1](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.1)
+
 * [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2)
+* [DTLS 1.0](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
+* [DTLS 1.2](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
 
 ### Protocols\Weak Protocols
 * Multi-Protocol Unified Hello
@@ -111,6 +113,7 @@ require a restart of the computer.
 * [SSL 2.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 * [SSL 3.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0.2C_2.0_and_3.0)
 * [TLS 1.0](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.0)
+* [TLS 1.1](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.1)
 
 ## Cipher Suite Order
 Setting the cipher suite order (the second half of IIS Crypto) for
