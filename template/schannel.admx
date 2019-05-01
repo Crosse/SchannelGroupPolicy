@@ -59,7 +59,7 @@
             <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
-                <boolean id="MPUH_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" valueName="">
+                <boolean id="MPUH_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -77,7 +77,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="MPUH_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" valueName="">
+                <boolean id="MPUH_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -109,7 +109,7 @@
             <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
-                <boolean id="PCTv1_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" valueName="">
+                <boolean id="PCTv1_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -127,7 +127,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="PCTv1_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" valueName="">
+                <boolean id="PCTv1_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -156,7 +156,7 @@
             <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
-                <boolean id="SSLv2_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" valueName="">
+                <boolean id="SSLv2_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -174,7 +174,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="SSLv2_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" valueName="">
+                <boolean id="SSLv2_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -203,7 +203,7 @@
             <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
-                <boolean id="SSLv3_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" valueName="">
+                <boolean id="SSLv3_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -221,7 +221,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="SSLv3_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" valueName="">
+                <boolean id="SSLv3_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -250,7 +250,7 @@
             <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Win2k" />
             <elements>
-                <boolean id="TLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" valueName="">
+                <boolean id="TLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -268,7 +268,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="TLSv10_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" valueName="">
+                <boolean id="TLSv10_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -297,7 +297,7 @@
             <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
-                <boolean id="TLSv11_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" valueName="">
+                <boolean id="TLSv11_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -315,7 +315,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="TLSv11_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" valueName="">
+                <boolean id="TLSv11_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -344,7 +344,7 @@
             <parentCategory ref="Protocols" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
-                <boolean id="TLSv12_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" valueName="">
+                <boolean id="TLSv12_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -362,7 +362,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="TLSv12_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" valueName="">
+                <boolean id="TLSv12_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -391,7 +391,7 @@
             <parentCategory ref="Protocols" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
-                <boolean id="DTLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client" valueName="">
+                <boolean id="DTLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -409,7 +409,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="DTLSv10_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server" valueName="">
+                <boolean id="DTLSv10_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -438,7 +438,7 @@
             <parentCategory ref="Protocols" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
-                <boolean id="DTLSv12_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client" valueName="">
+                <boolean id="DTLSv12_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
@@ -456,7 +456,7 @@
                         </item>
                     </falseList>
                 </boolean>
-                <boolean id="DTLSv12_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server" valueName="">
+                <boolean id="DTLSv12_ServerCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server">
                         <item valueName="Enabled">
                             <value><decimal value="1" /></value>
