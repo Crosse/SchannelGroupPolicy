@@ -80,6 +80,14 @@ Changing this setting will require a restart of the computer before the setting 
 Changing this setting will require a restart of the computer before the setting will take effect.
             </string>
 
+            <!-- TLSv1.3 -->
+            <string id="TLSv13">TLS 1.3</string>
+            <string id="TLSv13_Help">Enables or disables the use of TLS 1.3.  TLS 1.3 is without known security issues.
+
+Changing this setting will require a restart of the computer before the setting will take effect.
+WARNING!! THIS SHOULD BE ENABLED ON WINDOWS 10 v1903 AND WINDOWS SERVER 2019 v1903 ONLY!! Enabling on Windows Server 2016 WILL cause problems.
+            </string>
+
             <!-- DTLSv1.0 -->
             <string id="DTLSv10">DTLS 1.0</string>
             <string id="DTLSv10_Help">Enables or disables the use of DTLS 1.0.  Windows 7 and Windows Server 2008 R2 and above.
