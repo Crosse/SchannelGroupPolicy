@@ -104,6 +104,7 @@ require a restart of the computer.
 ## Protocols
 
 * [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2)
+* [TLS 1.3](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3)
 * [DTLS 1.0](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
 * [DTLS 1.2](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
 
