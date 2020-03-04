@@ -5,7 +5,7 @@
      Deployment Best Practices" guide found at
      https://www.ssllabs.com/projects/best-practices/.
 	 
-	 German Translation by Stephan Glöckner (stephan.gloeckner@me.com)
+	 German Translation by Stephan Gloeckner (stephan.gloeckner@me.com)
 -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0" >
     <displayName>Schannel Einstellungen</displayName>
@@ -56,7 +56,7 @@ Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
 
 SSL 3.0 ist unsicher, wenn es mit HTTP genutzt wird, schwach bei Nutzung mit anderen Protokollen.  Außerdem ist es überholt.  TLS 1.2 oder besser sollte stattdessen genutzt werden, sofern möglich.
 
-Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden. 
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden. 
             </string>
 
             <!-- TLSv1.0 -->
@@ -65,35 +65,35 @@ Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden.
 
 TLS 1.0 ist immernoch größtenteils sicher.  In Kombination mit HTTP kann es mit sorgfältiger Konfiguration nahezu sicher gemacht werden.  Nichtsdestotrotz ist es möglicherweise für Rückwärtskompatibilität notwendig.
 
-Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden.
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
 
             <!-- TLSv1.1 -->
             <string id="TLSv11">TLS 1.1</string>
             <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.
 
-Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden.
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
 
             <!-- TLSv1.2 -->
             <string id="TLSv12">TLS 1.2</string>
             <string id="TLSv12_Help">Aktiviert oder deaktiviert TLS 1.2.  TLS 1.2 hat keine bekannten Sicherheitsprobleme.
 
-Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden.
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
 
             <!-- DTLSv1.0 -->
             <string id="DTLSv10">DTLS 1.0</string>
             <string id="DTLSv10_Help">Aktiviert oder deaktiviert DTLS 1.0.  Windows 7, Windows Server 2008 R2 und darüber.
 
-Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden.
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
              
             <!-- DTLSv1.2 -->
             <string id="DTLSv12">DTLS 1.2</string>
             <string id="DTLSv12_Help">Aktiviert oder deaktiviert DTLS 1.2.  Windows 10 v1607 und darüber.
 
-Damit die Änderungen übernimmen werden, muss der Computer neugestartet werden.
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
              
             <!-- WEAK CIPHERS -->
@@ -139,7 +139,7 @@ TLS_RSA_WITH_DES_CBC_SHA
 
             <!-- RC2 128/128 -->
             <string id="RC2_128">RC2 128/128</string>
-            <string id="RC2_128_Help">EAktiviert oder deaktiviert RC2 128/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.</string>
+            <string id="RC2_128_Help">Aktiviert oder deaktiviert RC2 128/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.</string>
 
             <!-- RC4 40/128 -->
             <string id="RC4_40">RC4 40/128</string>
@@ -293,7 +293,7 @@ TLS_RSA_WITH_RC4_128_SHA
 
             <!-- SHA-256 -->
             <string id="SHA256">SHA-256</string>
-            <string id="SHA256_Help">EAktiviert oder deaktiviert den SHA-256_Hash-Algorithmus.
+            <string id="SHA256_Help">Aktiviert oder deaktiviert den SHA-256_Hash-Algorithmus.
 
 Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
 
@@ -474,7 +474,7 @@ Wenn diese Einstellung unkonfiguriert bleibt, werden TSL 1.1 und TLS 1.2 standar
                 <checkBox refId="DTLSv10_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges DTLS 1.0 (z. B. IIS)</checkBox>
             </presentation>
              <presentation id="DTLSv12">
-                <checkBox refId="DTLSv12_ClientCheckbox" defaultChecked="true">EAktiviere clientseitiges DTLS 1.2 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="DTLSv12_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges DTLS 1.2 (z. B. Internet Explorer)</checkBox>
                 <checkBox refId="DTLSv12_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges 1.2 (z. B. IIS)</checkBox>
             </presentation>
         </presentationTable>
