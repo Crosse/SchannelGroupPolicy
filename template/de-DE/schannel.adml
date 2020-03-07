@@ -369,7 +369,7 @@ Vergleiche auch Microsoft Security Advisory 3174644 für mehr Informationen zu D
             <string id="PKCSClient">PKCS-Clientschlüssellänge</string>
             <string id="PKCSClient_Help">Legt die minimale Länge des PKCS-Ephemeral-Schlüssels für den TLS-Client fest.
 
-Vergleiche auch Microsoft Security Advisory 3174644 oder https://support.microsoft.com/en-us/help/3174644/microsoft-security-advisory-updated-support-for-diffie-hellman-key-exc für mehr Informationen zu PKCS-Modulus-Längen. 1024 ist der derzeit empfohlene Minimalwert.
+Vergleiche auch Microsoft Security Advisory 3174644 oder https://support.microsoft.com/de-de/help/3174644/microsoft-security-advisory-updated-support-for-diffie-hellman-key-exc für mehr Informationen zu PKCS-Modulus-Längen. 1024 ist der derzeit empfohlene Minimalwert.
             </string>	
             <string id="PKCS_Value1024">1024</string>
             <string id="PKCS_Value2048">2048</string>
