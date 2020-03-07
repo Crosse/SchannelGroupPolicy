@@ -293,7 +293,7 @@ TLS_RSA_WITH_RC4_128_SHA
 
             <!-- SHA-256 -->
             <string id="SHA256">SHA-256</string>
-            <string id="SHA256_Help">Aktiviert oder deaktiviert den SHA-256_Hash-Algorithmus.
+            <string id="SHA256_Help">Aktiviert oder deaktiviert den SHA-256-Hash-Algorithmus.
 
 Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
 
