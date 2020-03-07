@@ -218,7 +218,7 @@ TLS_RSA_WITH_AES_128_CBC_SHA256
 
             <!-- AES 256/256 -->
             <string id="AES256">AES 256/256</string>
-            <string id="AES256_Help">Aktiviert oder deaktiviert AES 256/256.  Note that in order for Windows 2003 to support AES-256, hotfix KB948963 must be installed.
+            <string id="AES256_Help">Aktiviert oder deaktiviert AES 256/256.  Beachten Sie, dass Hotfix KB948963 installiert werden muss, damit Windows 2003 AES-256 unterstützt.
 
 Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
 
