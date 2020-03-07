@@ -70,7 +70,7 @@ Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
 
             <!-- TLSv1.1 -->
             <string id="TLSv11">TLS 1.1</string>
-            <string id="TLSv11_Help">Enables or disables the use of TLS 1.1.
+            <string id="TLSv11_Help">Aktiviert oder deaktiviert TLS 1.1.
 
 Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
