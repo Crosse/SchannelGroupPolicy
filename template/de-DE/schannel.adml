@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (c) 2015 Seth Wright (wrightst@jmu.edu) for James Madison University -->
+<!--
+     NOTE:  Some help text comes from Qualys SSL Labs' excellent "SSL/TLS
+     Deployment Best Practices" guide found at
+     https://www.ssllabs.com/projects/best-practices/.
+	 
+	 German Translation by Stephan Gloeckner (stephan.gloeckner@me.com)
+-->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0" >
+    <displayName>Schannel Einstellungen</displayName>
+    <description>Diese Datei beinhalten Einstellungen um TLS- und SSL-Versionen zu aktivieren oder deaktivieren.</description>
+    <resources>
+        <stringTable>
+            <string id="SUPPORTED_3174644">Mindestens Windows 10; 
+Mindestens Windows Server 2008 SP2 oder Windows Vista SP2 mit KB3174644 </string>
+
+            <!-- CATEGORIES -->
+            <string id="Protocols">Protokolle</string>
+            <string id="WeakProtocols">Schwache Protokolle</string>
+            <string id="Ciphers">Ciphers</string>
+            <string id="WeakCiphers">Schwache Ciphers</string>
+            <string id="Hashes">Hashes</string>
+            <string id="WeakHashes">Schwache Hashes</string>
+            <string id="KeyEx">Schlüsselaustausch</string>
+            <string id="WeakKeyEx">Schwacher Schlüsselaustausch</string>
+
+
+            <!-- PROTOCOLS -->
+            <!-- Multi-Protocol Unified Hello -->
+            <string id="MPUH">Multi-Protocol Unified Hello</string>
+            <string id="MPUH_Help">Aktiviert oder deaktiviert die Nutzung von Multi-Protocol Unified Hello.  Dieses Protokoll wird nie von Schannel SSP genutzt.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+
+            <!-- PCT 1.0 -->
+            <string id="PCTv1">PCT 1.0</string>
+            <string id="PCTv1_Help">Aktiviert oder deaktiviert PCT 1.0.  Dieses Protokoll wird nie von Schannel SSP genutzt.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+
+            <!-- SSLv2 -->
+            <string id="SSLv2">SSL 2.0</string>
+            <string id="SSLv2_Help">Aktiviert oder deaktiviert SSL 2.0.  Standardmäßig ist SSL 2.0 auf Windows-Computern deaktiviert.
+
+Beachten Sie, dass SSL 2.0 unsicher ist und nicht benutzt werden sollte.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+
+            <!-- SSLv3 -->
+            <string id="SSLv3">SSL 3.0</string>
+            <string id="SSLv3_Help">Aktiviert oder deaktiviert SSL 3.0.
+
+SSL 3.0 ist unsicher, wenn es mit HTTP genutzt wird, schwach bei Nutzung mit anderen Protokollen.  Außerdem ist es überholt.  TLS 1.2 oder besser sollte stattdessen genutzt werden, sofern möglich.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden. 
+            </string>
+
+            <!-- TLSv1.0 -->
+            <string id="TLSv10">TLS 1.0</string>
+            <string id="TLSv10_Help">Aktiviert oder deaktiviert TLS 1.0.
+
+TLS 1.0 ist immernoch größtenteils sicher.  In Kombination mit HTTP kann es mit sorgfältiger Konfiguration nahezu sicher gemacht werden.  Nichtsdestotrotz ist es möglicherweise für Rückwärtskompatibilität notwendig.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+
+            <!-- TLSv1.1 -->
+            <string id="TLSv11">TLS 1.1</string>
+            <string id="TLSv11_Help">Aktiviert oder deaktiviert TLS 1.1.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+
+            <!-- TLSv1.2 -->
+            <string id="TLSv12">TLS 1.2</string>
+            <string id="TLSv12_Help">Aktiviert oder deaktiviert TLS 1.2.  TLS 1.2 hat keine bekannten Sicherheitsprobleme.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+
+            <!-- DTLSv1.0 -->
+            <string id="DTLSv10">DTLS 1.0</string>
+            <string id="DTLSv10_Help">Aktiviert oder deaktiviert DTLS 1.0.  Windows 7, Windows Server 2008 R2 und darüber.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+             
+            <!-- DTLSv1.2 -->
+            <string id="DTLSv12">DTLS 1.2</string>
+            <string id="DTLSv12_Help">Aktiviert oder deaktiviert DTLS 1.2.  Windows 10 v1607 und darüber.
+
+Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
+            </string>
+             
+            <!-- WEAK CIPHERS -->
+            <!-- NULL -->
+            <string id="NULL">NULL</string>
+            <string id="NULL_Help">Aktiviert oder deaktiviert NULL-Verschlüsselungs-Ciphers.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_RSA_WITH_NULL_SHA
+TLS_RSA_WITH_NULL_SHA256
+            </string>
+
+            <!-- DES 56/56 -->
+            <string id="DES_56">DES 56/56</string>
+            <string id="DES_56_Help">Aktiviert oder deaktiviert DES 56/56.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+            </string>
+
+            <!-- RC2 40/128 -->
+            <string id="RC2_40">RC2 40/128</string>
+            <string id="RC2_40_Help">Aktiviert oder deaktiviert RC2 40/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+            </string>
+
+            <!-- RC2 56/128 -->
+            <string id="RC2_56">RC2 56/128</string>
+            <string id="RC2_56_Help">Aktiviert oder deaktiviert RC2 56/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+            </string>
+
+            <!-- RC2 128/128 -->
+            <string id="RC2_128">RC2 128/128</string>
+            <string id="RC2_128_Help">Aktiviert oder deaktiviert RC2 128/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.</string>
+
+            <!-- RC4 40/128 -->
+            <string id="RC4_40">RC4 40/128</string>
+            <string id="RC4_40_Help">Aktiviert oder deaktiviert RC4 40/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+            </string>
+
+            <!-- RC4 56/128 -->
+            <string id="RC4_56">RC4 56/128</string>
+            <string id="RC4_56_Help">Aktiviert oder deaktiviert RC4 56/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
+            </string>
+
+            <!-- RC4 64/128 -->
+            <string id="RC4_64">RC4 64/128</string>
+            <string id="RC4_64_Help">Aktiviert oder deaktiviert RC4 64/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.</string>
+
+            <!-- RC4 128/128 -->
+            <string id="RC4_128">RC4 128/128</string>
+            <string id="RC4_128_Help">Aktiviert oder deaktiviert RC4 128/128.  Dies ist eine schwache Cipher und sollte nicht verwendet werden.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_RSA_WITH_RC4_128_MD5
+SSL_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+            </string>
+
+
+            <!-- STRONG CIPHERS -->
+            <!-- Triple DES 168 -->
+            <string id="3DES">Triple DES 168</string>
+            <string id="3DES_Help">Aktiviert oder deaktiviert Triple-DES 128.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_CK_DES_192_EDE_CBC_WITH_MD5
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+            </string>
+
+            <!-- AES 128/128 -->
+            <string id="AES128">AES 128/128</string>
+            <string id="AES128_Help">Aktiviert oder deaktiviert AES 128/128.  Beachten Sie, dass Hotfix KB948963 installiert werden muss, damit Windows 2003 AES-128 unterstützt.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+            </string>
+
+            <!-- AES 256/256 -->
+            <string id="AES256">AES 256/256</string>
+            <string id="AES256_Help">Aktiviert oder deaktiviert AES 256/256.  Beachten Sie, dass Hotfix KB948963 installiert werden muss, damit Windows 2003 AES-256 unterstützt.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+            </string>
+
+
+            <!-- HASHING ALGORITHMS -->
+            <!-- MD5 -->
+            <string id="MD5">MD5</string>
+            <string id="MD5_Help">Aktiviert oder deaktiviert den MD5-Hash-Algorithmus.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+SSL_CK_DES_192_EDE3_CBC_WITH_MD5
+SSL_CK_DES_64_CBC_WITH_MD5
+SSL_CK_RC4_128_EXPORT40_MD5
+SSL_CK_RC4_128_WITH_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_NULL_MD5
+TLS_RSA_WITH_RC4_128_MD5
+            </string>
+
+            <!-- SHA -->
+            <string id="SHA">SHA</string>
+            <string id="SHA_Help">Aktiviert oder deaktiviert den SHA-Hash-Algorithmus.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_DES_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521
+TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA
+TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_NULL_SHA
+TLS_RSA_WITH_RC4_128_SHA
+            </string>
+
+            <!-- SHA-256 -->
+            <string id="SHA256">SHA-256</string>
+            <string id="SHA256_Help">Aktiviert oder deaktiviert den SHA-256-Hash-Algorithmus.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_NULL_SHA256
+            </string>
+
+            <!-- SHA-384 -->
+            <string id="SHA384">SHA-384</string>
+            <string id="SHA384_Help">Aktiviert oder deaktiviert den SHA-384-Hash-Algorithmus.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
+            </string>
+
+            <!-- SHA-512 -->
+            <string id="SHA512">SHA-512</string>
+            <string id="SHA512_Help">Aktiviert oder deaktiviert den SHA-512-Hash-Algorithmus.</string>
+
+
+            <!-- KEY EXCHANGE ALGORITHMS -->
+            <!-- Diffie-Hellman -->
+            <string id="DH">Diffie-Hellman</string>
+            <string id="DH_Help">Aktiviert oder deaktiviert den Diffie-Hellman-Schlüsselaustauschalgorithmus.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_DHE_DSS_WITH_DES_CBC_SHA
+            </string>
+            <string id="DHServer">Diffie-Hellman-Serverschlüssellänge</string>
+            <string id="DHServer_Help">Legt die minimale Länge des Diffie-Hellman-Ephemeral-Schlüssels für den TLS-Server fest.
+
+Vergleiche auch Microsoft Security Advisory 3174644 für mehr Informationen zu DH-Modulus-Längen. 2048 ist der derzeit empfohlene Minimalwert.
+            </string>
+            <string id="DHClient">Diffie-Hellman-Clientschlüssellänge</string>
+            <string id="DHClient_Help">Legt die minimale Länge des Diffie-Hellman-Ephemeral-Schlüssels für den TLS-Client fest.
+
+Vergleiche auch Microsoft Security Advisory 3174644 für mehr Informationen zu DH-Modulus-Längen. 1024 ist der derzeit empfohlene Minimalwert.
+            </string>			
+            <string id="DH_Value1024">1024</string>
+            <string id="DH_Value2048">2048</string>
+            <string id="DH_Value3072">3072</string>
+            <string id="DH_Value4096">4096</string>
+
+            <!-- PKCS -->
+            <string id="PKCS">PKCS</string>
+            <string id="PKCS_Help">Aktiviert oder deaktiviert dem PKCS-Schlüsselaustauschalgorithmus.</string>
+            <string id="PKCSClient">PKCS-Clientschlüssellänge</string>
+            <string id="PKCSClient_Help">Legt die minimale Länge des PKCS-Ephemeral-Schlüssels für den TLS-Client fest.
+
+Vergleiche auch Microsoft Security Advisory 3174644 oder https://support.microsoft.com/de-de/help/3174644/microsoft-security-advisory-updated-support-for-diffie-hellman-key-exc für mehr Informationen zu PKCS-Modulus-Längen. 1024 ist der derzeit empfohlene Minimalwert.
+            </string>	
+            <string id="PKCS_Value1024">1024</string>
+            <string id="PKCS_Value2048">2048</string>
+            <string id="PKCS_Value3072">3072</string>
+            <string id="PKCS_Value4096">4096</string>
+
+            <!-- ECDH -->
+            <string id="ECDH">ECDH</string>
+            <string id="ECDH_Help">Aktiviert oder deaktiviert den Elliptic-Curve-Diffie-Hellman-Schlüsselaustauschalgorithmus.
+
+Änderung dieser Einstellung legt fest, ob folgende Ciphers ausgewählt werden können:
+
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
+            </string>
+
+            <!-- .NET Framework 4 -->
+            <string id="dotnet4">.NET Framework 4 starke Verschlüsselung</string>
+            <string id="dotnet4_Help">Aktiviert oder deaktiviert TLS 1.1 und TLS 1.2 in .NET Framework 4.
+
+<!-- </string>If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be enabled by default for applications targeting .NET Framework 4.6 or higher and disabled otherwise. -->
+Wenn diese Einstellung unkonfiguriert bleibt, werden TLS 1.1 und TLS 1.2 standardmäßig für Anwendungen aktiviert, die .NET Framwork 4.6 oder höher verwenden. 
+            </string>
+
+            <!-- .NET Framework 2 -->
+            <string id="dotnet2">.NET Framework 2 starke Verschlüsselung</string>
+            <string id="dotnet2_Help">Aktiviert oder deaktiviert TLS 1.1 und TLS 1.2 in .NET Framework 2.
+
+Wenn diese Einstellung unkonfiguriert bleibt, werden TSL 1.1 und TLS 1.2 standardmäßig deaktiviert.
+            </string>
+
+        </stringTable>
+
+        <presentationTable>
+            <!-- KEY EXCHANGE ALGORITHMS -->
+            <presentation id="DHServer">
+              <dropdownList refId="DHServer_MinLength">Serverseitinge minimale DH-Modulus-Länge</dropdownList>
+            </presentation>
+            <presentation id="DHClient">
+              <dropdownList refId="DHClient_MinLength">Clientseitige minimale DH-Modulus-Länge</dropdownList>
+            </presentation>
+            <presentation id="PKCSClient">
+              <dropdownList refId="PKCSClient_MinLength">Clientseitige minimale PKCS-Modulus-Länge</dropdownList>
+            </presentation>			
+            <!-- PROTOCOLS -->
+            <presentation id="MPUH">
+                <checkBox refId="MPUH_ClientCheckbox" defaultChecked="false">Aktiviere clientseitiges Multi-Protocol Unified Hello (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="MPUH_ServerCheckbox" defaultChecked="false">Aktiviere serverseitiges Multi-Protocol Unified Hello (z. B. IIS)</checkBox>
+            </presentation>
+            <presentation id="PCTv1">
+                <checkBox refId="PCTv1_ClientCheckbox" defaultChecked="false">Aktiviere clientseitiges PCT 1.0 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="PCTv1_ServerCheckbox" defaultChecked="false">Aktiviere serverseitiges PCT 1.0 (z. B. IIS)</checkBox>
+            </presentation>
+            <presentation id="SSLv2">
+                <checkBox refId="SSLv2_ClientCheckbox" defaultChecked="false">Aktiviere clientseitiges SSL 2.0 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="SSLv2_ServerCheckbox" defaultChecked="false">Aktiviere serverseitiges SSL 2.0 (z. B. IIS)</checkBox>
+            </presentation>
+            <presentation id="SSLv3">
+                <checkBox refId="SSLv3_ClientCheckbox" defaultChecked="false">Aktiviere clientseitiges SSL 3.0 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="SSLv3_ServerCheckbox" defaultChecked="false">Aktiviere serverseitiges SSL 3.0 (z. B. IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv10">
+                <checkBox refId="TLSv10_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges TLS 1.0 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="TLSv10_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges TLS 1.0 (z. B. IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv11">
+                <checkBox refId="TLSv11_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges TLS 1.1 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="TLSv11_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges TLS 1.1 (z. B. IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv12">
+                <checkBox refId="TLSv12_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges TLS 1.2 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="TLSv12_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges TLS 1.2 (z. B.  IIS)</checkBox>
+            </presentation>
+             <presentation id="DTLSv10">
+                <checkBox refId="DTLSv10_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges DTLS 1.0 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="DTLSv10_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges DTLS 1.0 (z. B. IIS)</checkBox>
+            </presentation>
+             <presentation id="DTLSv12">
+                <checkBox refId="DTLSv12_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges DTLS 1.2 (z. B. Internet Explorer)</checkBox>
+                <checkBox refId="DTLSv12_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges 1.2 (z. B. IIS)</checkBox>
+            </presentation>
+        </presentationTable>
+    </resources>
+</policyDefinitionResources>
