@@ -389,7 +389,7 @@
                 presentation="$(presentation.TLSv13)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3">
             <parentCategory ref="Protocols" />
-            <supportedOn ref="windows:SUPPORTED_Windows10" />
+            <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS6_NOSERVER" />
             <elements>
                 <boolean id="TLSv13_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client" valueName="Enabled">
                     <trueList defaultKey="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client">
