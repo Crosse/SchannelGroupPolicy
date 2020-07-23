@@ -1,5 +1,14 @@
 # Group Policy Template for Schannel
 
+## Maintainers Wanted!
+I no longer maintain Windows servers for my job, so this may
+be out of date. If you notice something that needs to be updated, please
+submit an issue or a pull request! I can only rely on others to keep
+this project relevant and updated, and if you'd like to help out
+(and have a Windows environment in which you could test pull requests!),
+let me know and I can add you to this repo. Thanks!
+
+## What Is This?
 I really like Nartac Software's [IIS Crypto][IISCrypto] tool for
 configuring protocols, ciphers, hashes and key exchange algorithms on
 Windows.  However, since the tool simply makes changes to the local
@@ -10,11 +19,7 @@ startup script GPO, but I wanted a more Group Policy-integrated way to
 enable or disable things.  So I created an administrative template for
 Group Policy to do just that.
 
-***Note**: I no longer maintain Windows servers for my job, so this may
-be out of date. If you notice something that needs to be updated, please
-submit an issue or a pull request!*
-
-# What Does it Do?
+## What Does it Do?
 This template simply twiddles values under the registry key
 `HKLM\CurrentControlSet\Control\SecurityProviders\Schannel`.
 
