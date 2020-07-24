@@ -108,10 +108,10 @@ require a restart of the computer.
 
 ## Protocols
 
-* [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2)
 * [TLS 1.3](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3)
-* [DTLS 1.0](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
+* [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2)
 * [DTLS 1.2](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
+* [DTLS 1.0](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security)
 
 ### Protocols\Weak Protocols
 * Multi-Protocol Unified Hello
@@ -146,9 +146,11 @@ Once you've got your list, add it to your GPO and roll it out!
 * [SSL Cipher Suites in Windows Server 2003 and XP][xp_ssl]
 * [Schannel Cipher Suites in Windows Server 2008 and Vista][vista]
 * [Schannel Cipher Suites in Windows Server 2008 R2 and above][2008r2]
+* [Microsoft TLS 1.3 Support Reference][TLS13_win10]
 * [How to restrict the use of certain cryptographic algorithms and protocols in Schannel.dll][restrict_usage]
 * [Managing Group Policy ADMX Files Step-by-Step Guide][admx_install]
 * [Transport Layer Security (TLS) registry settings][TLS_registry]
+* [Transport Layer Security (TLS) best practices with .NET Framework][TLS_DotNet]
 
 [IISCrypto]: https://www.nartac.com/Products/IISCrypto
 [policies]: https://msdn.microsoft.com/en-us/library/aa374292(v=vs.85).aspx
@@ -160,5 +162,7 @@ Once you've got your list, add it to your GPO and roll it out!
 [xp_ssl]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa380124(v=vs.85).aspx
 [vista]: https://msdn.microsoft.com/en-us/library/windows/desktop/ff468651(v=vs.85).aspx
 [2008r2]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa374757(v=vs.85).aspx
+[TLS13_win10]: https://devblogs.microsoft.com/premier-developer/microsoft-tls-1-3-support-reference
 [restrict_usage]: https://support.microsoft.com/en-us/kb/245030
 [TLS_registry]: https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings
+[TLS_DotNet]: https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls
