@@ -82,6 +82,14 @@ Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
 Damit die Änderungen übernommen werden, muss der Computer neugestartet werden.
             </string>
 
+            <!-- TLSv1.3 -->
+            <string id="TLSv13">TLS 1.3 [EXPERIMENTAL]</string>
+            <string id="TLSv13_Help">Aktiviert oder deaktiviert TLS 1.3.  TLS 1.3 hat keine bekannten Sicherheitsprobleme.
+
+This setting is only compatible on Windows 10 1903 and above and does not require a reboot to take effect.
+
+            </string>
+
             <!-- DTLSv1.0 -->
             <string id="DTLSv10">DTLS 1.0</string>
             <string id="DTLSv10_Help">Aktiviert oder deaktiviert DTLS 1.0.  Windows 7, Windows Server 2008 R2 und darüber.
@@ -418,6 +426,7 @@ TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521
 
 <!-- </string>If this setting is left unconfigured, TLS 1.1 and TLS 1.2 will be enabled by default for applications targeting .NET Framework 4.6 or higher and disabled otherwise. -->
 Wenn diese Einstellung unkonfiguriert bleibt, werden TLS 1.1 und TLS 1.2 standardmäßig für Anwendungen aktiviert, die .NET Framwork 4.6 oder höher verwenden. 
+https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls
             </string>
 
             <!-- .NET Framework 2 -->
@@ -425,6 +434,7 @@ Wenn diese Einstellung unkonfiguriert bleibt, werden TLS 1.1 und TLS 1.2 standar
             <string id="dotnet2_Help">Aktiviert oder deaktiviert TLS 1.1 und TLS 1.2 in .NET Framework 2.
 
 Wenn diese Einstellung unkonfiguriert bleibt, werden TSL 1.1 und TLS 1.2 standardmäßig deaktiviert.
+https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls
             </string>
 
         </stringTable>
@@ -468,6 +478,10 @@ Wenn diese Einstellung unkonfiguriert bleibt, werden TSL 1.1 und TLS 1.2 standar
             <presentation id="TLSv12">
                 <checkBox refId="TLSv12_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges TLS 1.2 (z. B. Internet Explorer)</checkBox>
                 <checkBox refId="TLSv12_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges TLS 1.2 (z. B.  IIS)</checkBox>
+            </presentation>
+            <presentation id="TLSv13">
+                <checkBox refId="TLSv13_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges TLS 1.3 (z. B. Edge)</checkBox>
+                <checkBox refId="TLSv13_ServerCheckbox" defaultChecked="true">Aktiviere serverseitiges TLS 1.3 (z. B.  IIS)</checkBox>
             </presentation>
              <presentation id="DTLSv10">
                 <checkBox refId="DTLSv10_ClientCheckbox" defaultChecked="true">Aktiviere clientseitiges DTLS 1.0 (z. B. Internet Explorer)</checkBox>
