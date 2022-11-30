@@ -435,7 +435,7 @@
                 explainText="$(string.DTLSv10_Help)"
                 presentation="$(presentation.DTLSv10)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0">
-            <parentCategory ref="Protocols" />
+            <parentCategory ref="WeakProtocols" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <elements>
                 <boolean id="DTLSv10_ClientCheckbox" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client" valueName="Enabled">
