@@ -440,13 +440,13 @@ https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls
         <presentationTable>
             <!-- KEY EXCHANGE ALGORITHMS -->
             <presentation id="DHServer">
-              <dropdownList refId="DHServer_MinLength">Server side DH modulus minimum length</dropdownList>
+              <dropdownList refId="DHServer_MinLength" defaultItem="1">Server side DH modulus minimum length</dropdownList>
             </presentation>
             <presentation id="DHClient">
-              <dropdownList refId="DHClient_MinLength">Client side DH modulus minimum length</dropdownList>
+              <dropdownList refId="DHClient_MinLength" defaultItem="1">Client side DH modulus minimum length</dropdownList>
             </presentation>
             <presentation id="PKCSClient">
-              <dropdownList refId="PKCSClient_MinLength">Client side PKCS modulus minimum length</dropdownList>
+              <dropdownList refId="PKCSClient_MinLength" defaultItem="1">Client side PKCS modulus minimum length</dropdownList>
             </presentation>			
             <!-- PROTOCOLS -->
             <presentation id="MPUH">
