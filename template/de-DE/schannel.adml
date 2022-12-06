@@ -444,13 +444,13 @@ https://docs.microsoft.com/de-DE/dotnet/framework/network-programming/tls
         <presentationTable>
             <!-- KEY EXCHANGE ALGORITHMS -->
             <presentation id="DHServer">
-              <dropdownList refId="DHServer_MinLength">Serverseitinge minimale DH-Modulus-Länge</dropdownList>
+              <dropdownList refId="DHServer_MinLength" defaultItem="1">Serverseitinge minimale DH-Modulus-Länge</dropdownList>
             </presentation>
             <presentation id="DHClient">
-              <dropdownList refId="DHClient_MinLength">Clientseitige minimale DH-Modulus-Länge</dropdownList>
+              <dropdownList refId="DHClient_MinLength" defaultItem="1">Clientseitige minimale DH-Modulus-Länge</dropdownList>
             </presentation>
             <presentation id="PKCSClient">
-              <dropdownList refId="PKCSClient_MinLength">Clientseitige minimale PKCS-Modulus-Länge</dropdownList>
+              <dropdownList refId="PKCSClient_MinLength" defaultItem="1">Clientseitige minimale PKCS-Modulus-Länge</dropdownList>
             </presentation>
             <!-- PROTOCOLS -->
             <presentation id="MPUH">

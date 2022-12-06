@@ -391,13 +391,13 @@ Si ce paramètre n'est pas configuré ou est désactivé, TLS 1.1 et 1.2 sont d�
 		<presentationTable>
 			<!-- KEY EXCHANGE ALGORITHMS -->
 			<presentation id="DHServer">
-				<dropdownList refId="DHServer_MinLength">Taille minimale du module DH côté serveur :</dropdownList>
+				<dropdownList refId="DHServer_MinLength" defaultItem="1">Taille minimale du module DH côté serveur :</dropdownList>
 			</presentation>
 			<presentation id="DHClient">
-				<dropdownList refId="DHClient_MinLength">Taille minimale du module DH côté client :</dropdownList>
+				<dropdownList refId="DHClient_MinLength" defaultItem="1">Taille minimale du module DH côté client :</dropdownList>
 			</presentation>
 			<presentation id="PKCSClient">
-				<dropdownList refId="PKCSClient_MinLength">Taille minimale du module PKCS côté client :</dropdownList>
+				<dropdownList refId="PKCSClient_MinLength" defaultItem="1">Taille minimale du module PKCS côté client :</dropdownList>
 			</presentation>
 			<!-- PROTOCOLS -->
 			<presentation id="MPUH">
