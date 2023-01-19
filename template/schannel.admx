@@ -794,7 +794,7 @@
                 explainText="$(string.DH_Help)"
                 valueName="Enabled"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman">
-            <parentCategory ref="KeyEx" />
+            <parentCategory ref="WeakKeyEx" />
             <supportedOn ref="windows:SUPPORTED_WindowsUpdate" />
             <enabledValue>
                 <decimal value="4294967295" />
@@ -807,7 +807,7 @@
                 explainText="$(string.DHServer_Help)"
                 presentation="$(presentation.DHServer)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman">
-            <parentCategory ref="KeyEx" />
+            <parentCategory ref="WeakKeyEx" />
             <supportedOn ref="SUPPORTED_3174644" />
             <elements>
                 <enum id="DHServer_MinLength" valueName="ServerMinKeyBitLength" >
@@ -838,7 +838,7 @@
                 explainText="$(string.DHClient_Help)"
                 presentation="$(presentation.DHClient)"
                 key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman">
-            <parentCategory ref="KeyEx" />
+            <parentCategory ref="WeakKeyEx" />
             <supportedOn ref="SUPPORTED_3174644" />
             <elements>
                 <enum id="DHClient_MinLength" valueName="ClientMinKeyBitLength" >
